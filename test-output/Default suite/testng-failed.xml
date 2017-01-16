@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="globalTest.suite">
+        <methods>
+          <include name="contactUs"/>
+          <include name="turnkeysolved"/>
+          <include name="footerprojectspage"/>
+          <include name="contactUs2"/>
+          <include name="hybrispage"/>
+          <include name="ourwork"/>
+          <include name="ottepage"/>
+          <include name="footerblog"/>
+          <include name="mozidopage"/>
+          <include name="blogpage"/>
+          <include name="runwaypage"/>
+          <include name="beforeClass"/>
+          <include name="reddypage"/>
+          <include name="leaseapppage"/>
+          <include name="rightsourcing"/>
+          <include name="afterClass"/>
+          <include name="blogdetails"/>
+          <include name="fiftypage"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- globalTest.suite -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
