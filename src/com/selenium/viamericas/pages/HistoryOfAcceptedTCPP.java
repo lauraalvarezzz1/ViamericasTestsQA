@@ -15,7 +15,7 @@ public class HistoryOfAcceptedTCPP {
 	public static By HistoryOfAcceptedOption = By.xpath(".//*[@id='main']/section/div[2]/a/i");
 	public static By NextButton = By.xpath(".//*[@id='recent-posts-2']/ul/li[1]/a");
 	
-	
+	//Laura
 	public HistoryOfAcceptedTCPP(WebDriver driver) {
 		this.driver = driver;
 	}
