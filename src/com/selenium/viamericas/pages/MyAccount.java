@@ -74,7 +74,6 @@ public class MyAccount {
 		driver.findElement(PasswordInput).sendKeys("Laura123");
 		driver.findElement(SignInButton).click();
 		driver.findElement(MyAccountLabel).click();
-		driver.findElement(AccountsLabel).click();
 		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
 
 	}

@@ -16,9 +16,11 @@ public class Accounts {
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[2]/input");
 	public static By SignInButton = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[4]/button");
+	public static By MyAccountLabel = 
+			By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
 
 	// <-----------ACCOUNTS SECTION------------->
-	public static By MyAccountLabel = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
+	public static By AccountsLabel = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[4]/a");
 
 	// Buttons
 	public static By DeleteAccountButton = By
@@ -75,6 +77,7 @@ public class Accounts {
 		driver.findElement(PasswordInput).sendKeys("Laura123");
 		driver.findElement(SignInButton).click();
 		driver.findElement(MyAccountLabel).click();
+		driver.findElement(AccountsLabel).click();
 		driver.findElement(CreateAccountButton).click();
 		driver.findElement(CreateBankAccountButton).click();
 		//For default Credit/Debit form is in Credit card
@@ -96,6 +99,7 @@ public class Accounts {
 		driver.findElement(PasswordInput).sendKeys("Laura123");
 		driver.findElement(SignInButton).click();
 		driver.findElement(MyAccountLabel).click();
+		driver.findElement(AccountsLabel).click();
 		driver.findElement(CreateAccountButton).click();
 		driver.findElement(CreateCardAccountButton).click();
 		//For default Credit/Debit form is in Credit card
@@ -105,6 +109,42 @@ public class Accounts {
 		driver.findElement(MonthDropdown).sendKeys("04");
 		driver.findElement(SelectOptions).click();
 		driver.findElement(YearDropdown).sendKeys("2017");
+		driver.findElement(SelectOptions).click();
+		driver.findElement(CreateAccountWithinTheForm).click();
+		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
+
+	}
+	
+	public void CreateCardAccountAfterMyAccount() {
+		
+		driver.findElement(AccountsLabel).click();
+		driver.findElement(CreateAccountButton).click();
+		driver.findElement(CreateCardAccountButton).click();
+		//For default Credit/Debit form is in Credit card
+		driver.findElement(CardHolderName).sendKeys("JENNA MOLLIGAN");
+		driver.findElement(CardNumber).sendKeys("4024007122828303");
+		driver.findElement(CVVCode).sendKeys("617");
+		driver.findElement(MonthDropdown).sendKeys("04");
+		driver.findElement(SelectOptions).click();
+		driver.findElement(YearDropdown).sendKeys("2017");
+		driver.findElement(SelectOptions).click();
+		driver.findElement(CreateAccountWithinTheForm).click();
+		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
+
+	}
+	
+	
+	public void CreateBankAccountAfterMyAccount() {
+		
+		driver.findElement(AccountsLabel).click();
+		driver.findElement(CreateAccountButton).click();
+		driver.findElement(CreateBankAccountButton).click();
+		//For default Credit/Debit form is in Credit card
+		driver.findElement(BankAccountHolderName).sendKeys("Laura Alvarez Galviz");
+		driver.findElement(BankAccountNickname).sendKeys("LaurisA");
+		driver.findElement(BankRoutingNumber).sendKeys("000110000");
+		driver.findElement(BankAccountNumber).sendKeys("0101010101011010");
+		driver.findElement(BankSelectoptionAccountType).sendKeys("Savings Account");
 		driver.findElement(SelectOptions).click();
 		driver.findElement(CreateAccountWithinTheForm).click();
 		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
