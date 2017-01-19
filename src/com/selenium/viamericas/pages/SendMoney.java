@@ -100,6 +100,18 @@ public class SendMoney {
 		driver.findElement(ContinueButton).click();
 		Assert.assertEquals("https://www.govianex.com/#/sendmoney/recipient", driver.getCurrentUrl());
 	}
+	
+	//Only is the information for the Send Money form
+	public void FormForSendMoney() {
+		driver.findElement(CountryName).sendKeys("COLOMBIA");
+		driver.findElement(SelectAnyOption).click();
+		driver.findElement(SendField).sendKeys("5");
+		driver.findElement(BankDepositButton).click();
+		driver.findElement(ChooseaBankField).sendKeys("BANCOLOMBIA");
+		driver.findElement(SelectAnyOption).click();
+		driver.findElement(ContinueButton).click();
+		Assert.assertEquals("https://www.govianex.com/#/sendmoney/recipient", driver.getCurrentUrl());
+	}
 
 	public void countryName() {
 		driver.findElement(CountryName).sendKeys("ARGENTINA"); // <-----------ARGENTINA---------->

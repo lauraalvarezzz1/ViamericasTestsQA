@@ -1,9 +1,12 @@
 package com.selenium.viamericas.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class GetaQuote {
+	
+	WebDriver driver;
 
 	// Get a Quote Form optional
 	public static By LoginLabel = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/a");
@@ -38,10 +41,45 @@ public class GetaQuote {
 	// Lists
 	public static By SelectAnyOption = By.xpath(".//*[@id='dropdown-list']");
 	
-	public void GoToAdminPage() {
-
-		// añadir un if para la cantidad de next buttons en esta sección.
+	public GetaQuote(WebDriver driver) {
+		this.driver = driver;
 	}
+	
+	
+	//Expect: Send Money form--------CashPickup option
+	public void GetaQuoteWithLogInAndCashPickup() {
+		driver.findElement(LoginLabel).click();
+		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
+		driver.findElement(PasswordInput).sendKeys("Laura123");
+		driver.findElement(SignInButton).click();
+		driver.findElement(GoToGetaQuote).click();
+		driver.findElement(CountryName).sendKeys("COLOMBIA");
+		driver.findElement(SelectAnyOption).click();
+		driver.findElement(AmountField).sendKeys("5");
+		driver.findElement(CashPickupButton).click();
+		driver.findElement(GetaQuoteButton).click();
+		driver.findElement(SendMoneyButton).click();
+		Assert.assertEquals("https://www.govianex.com/#/sendmoney/destination", driver.getCurrentUrl());
+
+	}
+	
+	//Expect: Send Money form--------BankAccount option
+		public void GetaQuoteWithLogInAndBankAccount() {
+			driver.findElement(LoginLabel).click();
+			driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
+			driver.findElement(PasswordInput).sendKeys("Laura123");
+			driver.findElement(SignInButton).click();
+			driver.findElement(GoToGetaQuote).click();
+			driver.findElement(CountryName).sendKeys("COLOMBIA");
+			driver.findElement(SelectAnyOption).click();
+			driver.findElement(AmountField).sendKeys("5");
+			driver.findElement(BankDepositButton).click();
+			driver.findElement(GetaQuoteButton).click();
+			driver.findElement(SendMoneyButton).click();
+			Assert.assertEquals("https://www.govianex.com/#/sendmoney/destination", driver.getCurrentUrl());
+
+		}
+
 
 	
 
