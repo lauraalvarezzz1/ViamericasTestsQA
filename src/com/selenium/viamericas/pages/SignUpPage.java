@@ -1,8 +1,6 @@
 package com.selenium.viamericas.pages;
 
-/**
- * Created by lauraalvarez on 30/01/17.
- */
+import org.openqa.selenium.By;
 public class SignUpPage {
 
     //<---------OBLIGATORY--------->
@@ -14,7 +12,7 @@ public class SignUpPage {
     public static By country = By.xpath(".//*[@placeholder='Country']");
     public static By state = By.xpath(".//*[@placeholder='State']");
     public static By zipcode = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[2]/div[4]/div/div[2]/input");
-    public static By city = (".//*[@placeholder='City']");
+    public static By city = By.xpath(".//*[@placeholder='City']");
     public static By emailaddress = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[2]/div[8]/input");
     public static By acceptTCPP = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[2]/div[9]/div[1]/ins");
     public static By createbutton = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[3]/button");
