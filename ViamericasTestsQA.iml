@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
-    <libelement value="file://$USER_HOME$/Downloads/selenium-server-standalone-3.0.1.jar" />
-    <libelement value="file://$USER_HOME$/Downloads/selenium-java.jar.zip" />
+    <libelement value="file:///Users/lauraalvarez/Downloads/selenium-server-standalone-3.0.1.jar" />
+    <libelement value="file:///Users/lauraalvarez/Downloads/selenium-java.jar.zip" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
@@ -15,24 +15,6 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-    <orderEntry type="module-library">
-      <library name="selenium-server-standalone-3.0.1.jar">
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/selenium-server-standalone-3.0.1.jar" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="selenium-java.jar.zip">
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/selenium-java.jar.zip" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
