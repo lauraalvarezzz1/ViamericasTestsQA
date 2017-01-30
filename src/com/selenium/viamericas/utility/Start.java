@@ -16,7 +16,7 @@ public class Start {
 
         if (Server.equals("dev")) {
 
-            System.setProperty("webdriver.chrome.driver", "/Users/talosdigital/ViamericasTestsQA/src");
+            System.setProperty("webdriver.chrome.driver", "/Users/talosdigital/ViamericasTestsQA/src/chromedriver");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.navigate().to(baseurl);
