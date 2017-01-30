@@ -2,37 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69c517e-cd94-4aa5-8bd7-9af7faec2175" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/bin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/bin1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/SaxonLiaison.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/apache-mime4j-0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bsh-2.0b4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cglib-nodep-2.1_3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/commons-codec-1.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/commons-exec-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/commons-io-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gson-2.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/guava-19.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hamcrest-library-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/httpclient-4.5.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/httpcore-4.4.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/httpmime-4.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/jcommander-1.48.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/jna-4.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/jna-platform-4.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/netty-3.5.7.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/phantomjsdriver-1.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/saxon-8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/selenium-java-2.53.0-srcs.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/selenium-java-2.53.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/testng-6.9.9.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/SpecificUsersStories/VIAM1770ChangePassword.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/ContactUsPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/GetaQuotePage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/HomePage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/HowitWorksPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/LocationsPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/LoginPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/MyAccount.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/PayerNetworkPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/RepeatTransactions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/SendMoney.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/Send_BankdepositPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/Send_DestinationPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/Send_FundingPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/Send_RecipientPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/Send_ReviewPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/pages/TransactionHistoryPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/subpages/Accounts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/subpages/ProfileSettings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/subpages/Recipients.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/AddAccounts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/AddRecipients.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/GetaQuote.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/Home.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/HowitWorks.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/Locations.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/Login.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/MyAccount.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/SendMoneyFlow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/tests/TransactionHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/selenium/viamericas/utility/Start.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViamericasTestsQA.iml" afterPath="$PROJECT_DIR$/ViamericasTestsQA.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/utility/Start.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/utility/Start.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/SignUpPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/SignUpPage.java" />
     </list>
     <ignored path="ViamericasTestsQA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,18 +66,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/tests/Home.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1547#1548#0" expanded="false" />
+                <element signature="e#1574#1575#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -82,47 +80,87 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#691#692#0" expanded="false" />
+                <element signature="e#726#727#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Locations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/tests/Locations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/utility/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30255404">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/tests/Login.java">
+      <file leaf-file-name="ViamericasTestsQA.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ViamericasTestsQA.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/tests/MyAccount.java">
+      <file leaf-file-name="RepeatTransactions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/RepeatTransactions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/SignUpPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11787819">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/LocationsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,27 +170,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HowitWorks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/tests/HowitWorks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding />
+              <folding>
+                <element signature="e#711#712#0" expanded="false" />
+                <element signature="e#746#747#0" expanded="false" />
+                <element signature="e#818#819#0" expanded="false" />
+                <element signature="e#884#885#0" expanded="false" />
+                <element signature="e#951#952#0" expanded="false" />
+                <element signature="e#1035#1036#0" expanded="false" />
+                <element signature="e#1111#1112#0" expanded="false" />
+                <element signature="e#1184#1185#0" expanded="false" />
+                <element signature="e#1264#1265#0" expanded="false" />
+                <element signature="e#1337#1338#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,6 +222,8 @@
         <option value="$PROJECT_DIR$/src/com/selenium/viamericas/tests/Login.java" />
         <option value="$PROJECT_DIR$/src/com/selenium/viamericas/tests/TransactionHistory.java" />
         <option value="$PROJECT_DIR$/src/com/selenium/viamericas/utility/Start.java" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/src/com/selenium/viamericas/pages/SignUpPage.java" />
       </list>
     </option>
   </component>
@@ -239,16 +270,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="ViamericasTestsQA" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -315,10 +344,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViamericasTestsQA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViamericasTestsQA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viamericas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViamericasTestsQA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViamericasTestsQA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViamericasTestsQA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViamericasTestsQA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -872,12 +949,16 @@
       <workItem from="1485545395482" duration="1061000" />
       <workItem from="1485548987085" duration="1803000" />
       <workItem from="1485728984340" duration="1560000" />
-      <workItem from="1485791324360" duration="3018000" />
+      <workItem from="1485791324360" duration="4154000" />
+      <workItem from="1485801323111" duration="518000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="GetaQuote - 2017.01.30 at 13h 11m 13s.xml">
+      <configuration name="GetaQuote" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GetaQuote - 2017.01.30 at 13h 13m 51s.xml">
       <configuration name="GetaQuote" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Home - 2017.01.30 at 13h 12m 19s.xml">
@@ -888,15 +969,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12419000" />
+    <option name="totallyTimeSpent" value="14073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1918" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -906,7 +987,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16471216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -917,6 +997,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -939,33 +1020,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/subpages/Recipients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/SendMoney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2396#2397#0" expanded="false" />
-            <element signature="e#2423#2424#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/SpecificUsersStories/VIAM1770ChangePassword.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -985,9 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,11 +1089,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1542#1543#0" expanded="false" />
-            <element signature="e#1569#1570#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,7 +1184,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,18 +1200,6 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1913#1914#0" expanded="false" />
             <element signature="e#1940#1941#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/RepeatTransactions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1542#1543#0" expanded="false" />
-            <element signature="e#1569#1570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1202,23 +1250,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/LocationsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,7 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,7 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,7 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,7 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,7 +1323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +1331,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1328,15 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1364,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#651#652#0" expanded="false" />
+            <element signature="e#686#687#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1354,7 +1375,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1362,7 +1386,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#691#692#0" expanded="false" />
+            <element signature="e#726#727#0" expanded="false" />
+            <element signature="e#925#926#0" expanded="false" />
+            <element signature="e#991#992#0" expanded="false" />
+            <element signature="e#1060#1061#0" expanded="false" />
+            <element signature="e#1115#1116#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1370,7 +1401,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
+            <element signature="e#826#827#0" expanded="false" />
+            <element signature="e#899#900#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1386,7 +1424,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="e#711#712#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#818#819#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#951#952#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
+            <element signature="e#1184#1185#0" expanded="false" />
+            <element signature="e#1264#1265#0" expanded="false" />
+            <element signature="e#1337#1338#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1394,7 +1443,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,15 +1455,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#692#0" expanded="false" />
+            <element signature="e#726#727#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/utility/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30255404">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViamericasTestsQA.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/RepeatTransactions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/LocationsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11787819">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
