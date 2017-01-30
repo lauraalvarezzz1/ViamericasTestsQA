@@ -1,5 +1,4 @@
 package com.selenium.viamericas.pages;
 
-public class AdminPageTCPP {
-
+public class PayerNetworkPage {
 }
