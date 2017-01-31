@@ -28,6 +28,7 @@ public class SignUp {
     @Test(enabled = true, priority = 0)
     public void gotosignup() throws Exception {
         SignUpPage.gotosignupform();
+        Assert.assertEquals(Start.driver.getCurrentUrl(), "https://test.govianex.com/#/account/register");
     }
 
     @Test(enabled = true, priority = 1)
@@ -67,7 +68,7 @@ public class SignUp {
 
         SignUpPage.acceptTCPP();
         SignUpPage.createbutton();
-        //Assert.assertEquals(webDriver.getCurrentUrl(), "https://test.govianex.com/#/account/register/confirm");
+        Assert.assertEquals(Start.driver.getCurrentUrl(), "https://test.govianex.com/#/account/register/confirm");
     }
 
 }
