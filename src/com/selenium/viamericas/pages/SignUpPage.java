@@ -28,7 +28,8 @@ public class SignUpPage {
     public static By day = By.xpath(".//*[@placeholder='Day']");
     public static By year = By.xpath(".//*[@placeholder='Year']");
 
-    public static By selectoption = By.xpath(".//*[@id='dropdown-list']");
+    public static By selectoption = By.xpath("//*[@id=\"dropdown-list\"]");
+    //*[@id="dropdown-list"]
 
 
     public static void gotosignupform() throws Exception {
@@ -66,28 +67,28 @@ public class SignUpPage {
         Start.driver.findElement(zipcode).sendKeys(zipcod);
     }
 
+    public static void selectcountry(String countr) throws Exception{
+        Thread.sleep(5000);
+        Start.driver.findElement(country).clear();
+        Start.driver.findElement(country).sendKeys(countr);
+    }
+
     public static void addemailaddress(String email) throws Exception {
         Thread.sleep(1500);
         Start.driver.findElement(emailaddress).clear();
         Start.driver.findElement(emailaddress).sendKeys(email);
     }
 
-    public static void selectcity(String city) {
-        Start.driver.findElement(cityDropdown).clear();
-        Start.driver.findElement(cityDropdown).sendKeys(city);
-        Start.driver.findElement(selectoption).click();
-    }
 
-    public static void selectstate(String state) {
+    public static void selectstate(String state)throws Exception {
         Start.driver.findElement(stateDropdown).clear();
         Start.driver.findElement(stateDropdown).sendKeys(state);
-        Start.driver.findElement(selectoption).click();
+        Thread.sleep(10000);
     }
 
-    public static void selectcountry(String countr) {
-        Start.driver.findElement(country).clear();
-        Start.driver.findElement(country).sendKeys(countr);
-        Start.driver.findElement(selectoption).click();
+    public static void selectcity(String city) throws Exception{
+        Thread.sleep(3000);
+        Start.driver.findElement(cityDropdown).sendKeys(city);
     }
 
     public static void acceptTCPP()throws Exception{
@@ -123,24 +124,27 @@ public class SignUpPage {
     public static void addcountryofbirth(String countryofb) throws Exception {
         Start.driver.findElement(countryofbirth).clear();
         Start.driver.findElement(countryofbirth).sendKeys(countryofb);
-        Start.driver.findElement(selectoption).click();
     }
 
     public static void addmonth(String monthdropdown) throws Exception {
         Start.driver.findElement(month).clear();
         Start.driver.findElement(month).sendKeys(monthdropdown);
-        Start.driver.findElement(selectoption).click();
     }
 
     public static void addday(String daydropdown) throws Exception {
         Start.driver.findElement(day).clear();
         Start.driver.findElement(day).sendKeys(daydropdown);
-        Start.driver.findElement(selectoption).click();
     }
 
     public static void addyear(String yeardropdown) throws Exception {
         Start.driver.findElement(year).clear();
         Start.driver.findElement(year).sendKeys(yeardropdown);
-        Start.driver.findElement(selectoption).click();
     }
+
+    public static void selectanyoption() throws Exception {
+        Thread.sleep(5000);
+        Start.driver.findElement(selectoption).click();
+
+    }
+
 }
