@@ -2,7 +2,12 @@ package com.selenium.viamericas.pages;
 
 import org.openqa.selenium.By;
 import com.selenium.viamericas.utility.Start;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+
 public class SignUpPage {
+    WebDriver driver;
+
 
     //<---------OBLIGATORY--------->
     public static By signupbutton = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/div/button[1]");
@@ -28,9 +33,13 @@ public class SignUpPage {
     public static By day = By.xpath(".//*[@placeholder='Day']");
     public static By year = By.xpath(".//*[@placeholder='Year']");
 
-    public static By selectoption = By.xpath("//*[@id=\"dropdown-list\"]");
+    public static By selectoption = By.xpath(".//*[@id='dropdown-list']");
     //*[@id="dropdown-list"]
 
+
+    public SignUpPage(WebDriver driver) {
+        this.driver = driver;
+    }
 
     public static void gotosignupform() throws Exception {
         Start.driver.findElement(signupbutton).click();
@@ -53,6 +62,7 @@ public class SignUpPage {
         Thread.sleep(1500);
         Start.driver.findElement(mobilephonenumber).clear();
         Start.driver.findElement(mobilephonenumber).sendKeys(mobile);
+
     }
 
     public static void addadressline1(String address) throws Exception {
@@ -67,36 +77,40 @@ public class SignUpPage {
         Start.driver.findElement(zipcode).sendKeys(zipcod);
     }
 
-    public static void selectcountry(String countr) throws Exception{
-        Thread.sleep(5000);
-        Start.driver.findElement(country).clear();
-        Start.driver.findElement(country).sendKeys(countr);
-    }
-
     public static void addemailaddress(String email) throws Exception {
         Thread.sleep(1500);
         Start.driver.findElement(emailaddress).clear();
         Start.driver.findElement(emailaddress).sendKeys(email);
     }
 
+    public static void selectcountry(String countr) throws Exception {
+        Start.driver.findElement(country).sendKeys(countr);
+        Start.driver.findElement(country).sendKeys(Keys.DOWN);
+        Start.driver.findElement(country).sendKeys(Keys.ENTER);
+        Thread.sleep(1000);
+    }
 
-    public static void selectstate(String state)throws Exception {
-        Start.driver.findElement(stateDropdown).clear();
+    public static void selectstate(String state) throws Exception {
+        Start.driver.findElement(stateDropdown).click();
         Start.driver.findElement(stateDropdown).sendKeys(state);
-        Thread.sleep(10000);
+        Start.driver.findElement(stateDropdown).sendKeys(Keys.DOWN);
+        Start.driver.findElement(stateDropdown).sendKeys(Keys.ENTER);
+        Thread.sleep(2000);
     }
 
-    public static void selectcity(String city) throws Exception{
-        Thread.sleep(3000);
+    public static void selectcity(String city) throws Exception {
+        Thread.sleep(2000);
         Start.driver.findElement(cityDropdown).sendKeys(city);
+        Start.driver.findElement(cityDropdown).sendKeys(Keys.DOWN);
+        Start.driver.findElement(cityDropdown).sendKeys(Keys.ENTER);
     }
 
-    public static void acceptTCPP()throws Exception{
+    public static void acceptTCPP() throws Exception {
         Start.driver.findElement(acceptTCPP).click();
         Thread.sleep(2000);
     }
 
-    public static void createbutton() throws Exception{
+    public static void createbutton() throws Exception {
         Start.driver.findElement(createbutton).click();
         Thread.sleep(2000);
     }
@@ -141,10 +155,9 @@ public class SignUpPage {
         Start.driver.findElement(year).sendKeys(yeardropdown);
     }
 
-    public static void selectanyoption() throws Exception {
+    public void selectanyoption() throws InterruptedException {
         Thread.sleep(5000);
-        Start.driver.findElement(selectoption).click();
+        driver.findElement(selectoption).click();
 
     }
-
 }

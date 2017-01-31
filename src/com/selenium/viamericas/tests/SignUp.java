@@ -6,11 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.selenium.viamericas.utility.Start;
+import org.openqa.selenium.WebDriver;
 
 /**
  * Created by lauraalvarez on 30/01/17.
  */
 public class SignUp {
+
 
 
     @BeforeClass
@@ -42,6 +44,7 @@ public class SignUp {
     public void selectcountrydropdown() throws Exception {
         Thread.sleep(2000);
         SignUpPage.selectcountry("UNITED STATES");
+        Assert.assertNotNull(SignUpPage.country);
 
     }
 
@@ -49,20 +52,22 @@ public class SignUp {
     public void selectstatedropdown() throws Exception {
         Thread.sleep(2000);
         SignUpPage.selectstate("CALIFORNIA");
-        SignUpPage.selectanyoption();
+        Assert.assertNotNull(SignUpPage.stateDropdown);
     }
 
     @Test(enabled = true, priority = 4)
     public void completecity() throws Exception {
         Thread.sleep(2000);
         SignUpPage.selectcity("LOS ANGELES");
-        SignUpPage.selectanyoption();
-        SignUpPage.acceptTCPP();
+        Assert.assertNotNull(SignUpPage.cityDropdown);
     }
 
     @Test(enabled = true, priority = 5)
     public void createbutton() throws Exception {
+
+        SignUpPage.acceptTCPP();
         SignUpPage.createbutton();
+        //Assert.assertEquals(webDriver.getCurrentUrl(), "https://test.govianex.com/#/account/register/confirm");
     }
 
 }
