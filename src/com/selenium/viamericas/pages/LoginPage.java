@@ -8,6 +8,7 @@ public class LoginPage {
     public static By password = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[2]/input");
     public static By signinbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[4]/button");
     public static By wrongcredentials = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/message-viamericas/div/p");
+    public static By forgotpasswordlink = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[5]/a");
 
     public static void login(String user, String pass){
 
@@ -33,5 +34,9 @@ public class LoginPage {
     public static void clearfields(){
         Start.driver.findElement(email).clear();
         Start.driver.findElement(password).clear();
+    }
+
+    public static void clickforgotpassword(){
+        Start.driver.findElement(forgotpasswordlink).click();
     }
 }

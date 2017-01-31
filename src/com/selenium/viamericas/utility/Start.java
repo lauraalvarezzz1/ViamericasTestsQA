@@ -20,14 +20,14 @@ public class Start {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.navigate().to(baseurl);
-            driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         } else if (Server.equals("test")) {
 
             driver = new FirefoxDriver();
             driver.manage().window().maximize();
             driver.navigate().to("https://test.govianex.com/#/");
-            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
             /** }else if(Server.equals("phantomjs")){
 
