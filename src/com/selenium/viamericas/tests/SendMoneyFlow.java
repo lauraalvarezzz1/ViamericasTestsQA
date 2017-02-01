@@ -53,7 +53,33 @@ public class SendMoneyFlow {
             Send_BankdepositPage.Completeaccountname();
             Send_BankdepositPage.Completeaccountnumber();
             Send_BankdepositPage.selectaccounttype();
-             Send_BankdepositPage.goandcontinue();
-        Assert.assertTrue(Start.driver.getCurrentUrl().contains("funding"));
+            Send_BankdepositPage.goandcontinue();
+            Assert.assertTrue(Start.driver.getCurrentUrl().contains("funding"));
+    }
+
+        @Test (enabled = true, priority = 3)
+        public void FundingPagewithBankAccount() throws Exception {
+            Send_FundingPage.selectaccount("bankaccount");
+            Send_FundingPage.continuebutton();
+            Send_FundingPage.addbankholdername();
+            Send_FundingPage.addbanknickname();
+            Send_FundingPage.addroutingnumber();
+            Send_FundingPage.addnumber();
+            Send_FundingPage.selecttype();
+            Send_FundingPage.continuebutton();
+            Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
+    }
+
+       @Test (enabled = false, priority = 3)
+       public void FundingPagewithCardAccount() throws Exception {
+            Send_FundingPage.selectaccount("creditdebitbutton");
+            Send_FundingPage.continuebutton();
+            Send_FundingPage.addcardholdername();
+            Send_FundingPage.addcardnumber();
+            Send_FundingPage.selectmonth();
+            Send_FundingPage.selectyear();
+            Send_FundingPage.addcvvcode();
+            Send_FundingPage.continuebutton();
+            Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
     }
 }

@@ -12,10 +12,10 @@ public class Send_FundingPage {
     public static By backButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[1]");
 
     //<--------BANK ACCOUNT BUTTON--------->
-    public static By accountholdername = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[2]/input");
-    public static By accountnickname = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[3]/input");
-    public static By routingname = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/input");
-    public static By accountnumber = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[5]/input");
+    public static By accountholdername = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[2]/input");
+    public static By accountnickname = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[3]/input");
+    public static By routingname = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/input");
+    public static By accountnumber = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[5]/input");
     public static By accounttype = By.xpath(".//*[@placeholder='Account Type']");
 
     //<--------CREDIT/DEBIT BUTTON----------->
@@ -48,7 +48,7 @@ public class Send_FundingPage {
 
     public static void addroutingnumber() throws Exception {
         Thread.sleep(3000);
-        Start.driver.findElement(routingname).sendKeys("0000011000000");
+        Start.driver.findElement(routingname).sendKeys("000110000");
     }
 
     public static void addnumber() throws Exception {
