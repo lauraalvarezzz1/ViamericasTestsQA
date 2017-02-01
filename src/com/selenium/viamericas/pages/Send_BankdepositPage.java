@@ -7,9 +7,12 @@ import org.openqa.selenium.Keys;
 
 public class Send_BankdepositPage {
 
-    public static By accountholdername = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/input");
-    public static By accountnumber = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[5]/input");
+    public static By accountholdername = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[3]/input");
+    public static By accountnumber = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/input");
     public static By accounttypedropdown = By.xpath(".//*[@placeholder='Account Type']");
+    public static By continueButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[2]");
+    public static By backButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[1]");
+
 
     public static void Completeaccountname() throws Exception {
         Thread.sleep(3000);
@@ -22,9 +25,16 @@ public class Send_BankdepositPage {
     }
 
     public static void selectaccounttype() throws Exception {
-        Start.driver.findElement(accounttypedropdown).sendKeys("Checking Account");
+        Start.driver.findElement(accounttypedropdown).sendKeys("Checking");
         Start.driver.findElement(accounttypedropdown).sendKeys(Keys.DOWN);
+        Thread.sleep(3000);
         Start.driver.findElement(accounttypedropdown).sendKeys(Keys.ENTER);
         Thread.sleep(3000);
+    }
+
+    public static void goandcontinue() throws Exception {
+        Start.driver.findElement(continueButton).click();
+        Thread.sleep(3000);
+
     }
 }

@@ -75,11 +75,12 @@ public class Send_RecipientPage {
         Start.driver.findElement(city).sendKeys("MEDELLIN");
         Start.driver.findElement(city).sendKeys(Keys.DOWN);
         Start.driver.findElement(city).sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public static void continuebutton() throws Exception {
+        Thread.sleep(4000);
         Start.driver.findElement(continueButton).click();
-        Thread.sleep(3000);
+
     }
 }

@@ -16,7 +16,7 @@ public class Start {
 
         if (Server.equals("dev")) {
 
-            System.setProperty("webdriver.chrome.driver", "/src/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/lauraalvarez/Downloads/chromedriver");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.navigate().to(baseurl);

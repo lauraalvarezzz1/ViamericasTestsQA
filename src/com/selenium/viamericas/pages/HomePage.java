@@ -12,7 +12,7 @@ public class HomePage {
     public static By getaquotelabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/nav-viamericas/nav/div[1]/ul[1]/li[3]/a");
     public static By howitworkslabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/nav-viamericas/nav/div[1]/ul[1]/li[4]/a");
     public static By locationlabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/nav-viamericas/nav/div[1]/ul[1]/li[5]/a");
-    public static By loginlabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/div/button[2]");
+    public static By loginbutton = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/button[2]");
     public static By signuplabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/div/button[1]");
 
     //Header menu elements
@@ -58,7 +58,7 @@ public class HomePage {
             Start.driver.findElement(howitworkslabel).click();
 
         }else if(page.equals("login")){
-            Start.driver.findElement(loginlabel).click();
+            Start.driver.findElement(loginbutton).click();
 
         }else if(page.equalsIgnoreCase("signup")){
             Start.driver.findElement(signuplabel).click();

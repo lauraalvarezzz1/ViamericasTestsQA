@@ -47,4 +47,13 @@ public class SendMoneyFlow {
             Send_RecipientPage.continuebutton();
             Assert.assertTrue(Start.driver.getCurrentUrl().contains("bankdeposit"));
          }
+
+       @Test (enabled = true, priority = 2)
+        public void RecipientBankDeposit() throws Exception {
+            Send_BankdepositPage.Completeaccountname();
+            Send_BankdepositPage.Completeaccountnumber();
+            Send_BankdepositPage.selectaccounttype();
+             Send_BankdepositPage.goandcontinue();
+        Assert.assertTrue(Start.driver.getCurrentUrl().contains("funding"));
+    }
 }
