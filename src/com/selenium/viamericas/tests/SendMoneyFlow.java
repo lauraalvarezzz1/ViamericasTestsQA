@@ -67,7 +67,7 @@ public class SendMoneyFlow {
             Send_FundingPage.addnumber();
             Send_FundingPage.selecttype();
             Send_FundingPage.continuebutton();
-            Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
+            //Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
     }
 
        @Test (enabled = false, priority = 3)
@@ -80,6 +80,12 @@ public class SendMoneyFlow {
             Send_FundingPage.selectyear();
             Send_FundingPage.addcvvcode();
             Send_FundingPage.continuebutton();
-            Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
+            //Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
+    }
+
+       @Test (enabled = true, priority = 4)
+       public void ReviewPage() throws Exception {
+            Send_ReviewPage.sendmoneybutton();
+            //Assert.assertTrue(Start.driver.getCurrentUrl().contains("confirmation"));
     }
 }
