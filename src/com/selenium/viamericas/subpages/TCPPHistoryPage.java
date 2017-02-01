@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 public class TCPPHistoryPage {
 
     public static By ADMINLabeloption = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[5]/a");
-    public static By TCPPHistory = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[5]/ul/li[3]/a/text()");
+    public static By TCPPHistory = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[5]/ul/li[3]/a");
     public static By UploadNewFileButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div[2]/button");
     public static By firstemail = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div[1]/div/table/tbody/tr[1]/td[1]/a");
 
