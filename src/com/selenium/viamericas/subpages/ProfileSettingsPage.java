@@ -102,11 +102,11 @@ public class ProfileSettingsPage {
 
 	public static void changestate() throws InterruptedException {
 		Start.driver.findElement(State).clear();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Start.driver.findElement(State).sendKeys("CALIFORNIA");
 		Start.driver.findElement(State).sendKeys(Keys.DOWN);
 		Start.driver.findElement(State).sendKeys(Keys.ENTER);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	public static void changecity() throws InterruptedException {
@@ -125,7 +125,7 @@ public class ProfileSettingsPage {
 
 	public static void gotochangepassword() throws InterruptedException {
 		Start.driver.findElement(ChangePasswordButton).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	public static void addthecurrentpassword() throws InterruptedException {

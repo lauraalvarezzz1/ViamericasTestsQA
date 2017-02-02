@@ -32,7 +32,7 @@ public class ProfileSettings {
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
 
-    @Test(enabled = true, priority = 1)
+    @Test(enabled = true, priority = 2)
 
     public void ChangePassword() throws Exception {
         ProfileSettingsPage.gotochangepassword();
@@ -45,7 +45,7 @@ public class ProfileSettings {
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
 
-    @Test(enabled = true, priority = 2)
+    @Test(enabled = true, priority = 1)
 
     public void EditProfileSettings() throws Exception {
         //ProfileSettingsPage.ProfileSettingsLabel();
