@@ -63,6 +63,7 @@ public class Accounts {
 	
 	public static By CVVCode = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[2]/div[6]/input");
+	public static By closepopup = By.xpath("html/body/div[3]/div[2]/span");
 
 	public static void gotoaccounts() throws Exception {
 		Start.driver.findElement(AccountsLabel).click();
@@ -131,7 +132,7 @@ public class Accounts {
 	}
 
 	public static void addroutingnumber() throws Exception {
-		Start.driver.findElement(BankRoutingNumber).sendKeys("053902197");
+		Start.driver.findElement(BankRoutingNumber).sendKeys("211370545");
 		Thread.sleep(2000);
 	}
 
@@ -145,6 +146,11 @@ public class Accounts {
 		Start.driver.findElement(BankAccountType).sendKeys(Keys.DOWN);
 		Start.driver.findElement(BankAccountType).sendKeys(Keys.ENTER);
 		Thread.sleep(1000);
+	}
+
+	public static void clickonclosepopup() throws Exception {
+		Start.driver.findElement(closepopup).click();
+		Thread.sleep(2000);
 	}
 
 }

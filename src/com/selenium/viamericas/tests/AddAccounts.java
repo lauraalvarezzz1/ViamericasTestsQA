@@ -36,6 +36,7 @@ public class AddAccounts {
 
     @Test(enabled = true, priority = 2)
     public void Createcardaccount() throws Exception {
+        Accounts.clickoncreatebutton();
         Accounts.clickoncardAccount();
         Accounts.addthecardholdername();
         Accounts.addcardnumber();
@@ -54,7 +55,8 @@ public class AddAccounts {
         Accounts.addroutingnumber();
         Accounts.addaccountnumber();
         Accounts.selecttype();
-        Accounts.clickoncreatebutton();
+        Accounts.clickoncreateaccount();
+        Accounts.clickonclosepopup();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("accounts"));
     }
 }
