@@ -62,6 +62,7 @@ public class ProfileSettingsPage {
 	public static By City = By.xpath(".//*[@placeholder='City]");
 
 	public static By closepopup = By.xpath("/html/body/div[3]/div[2]/span");
+	public static By dropdownsgeneral = By.xpath(".//*[@id='dropdown-input']");
 	
 
 
@@ -153,4 +154,8 @@ public class ProfileSettingsPage {
 		Thread.sleep(2000);
 	}
 
+	public static void cleandropdowns() throws InterruptedException {
+		Start.driver.findElement(dropdownsgeneral).clear();
+		Thread.sleep(2000);
+	}
 }
