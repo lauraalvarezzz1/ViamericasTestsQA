@@ -1,5 +1,6 @@
 package com.selenium.viamericas.pages;
 
+import com.selenium.viamericas.utility.Start;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,72 +43,10 @@ public class MyAccount {
 	public MyAccount(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	public void MyAccountProfileSettings() {
 
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		driver.findElement(RecipientsLabel).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/profile", driver.getCurrentUrl());
-
-	}
-	
-	public void MyAccountRecipients() {
-
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		driver.findElement(ProfileSettingsLabel).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/recipients", driver.getCurrentUrl());
-
-	}
-	
-	public void MyAccountAccounts() {
-
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
-
-	}
-
-	public void EnglishPreferences() {
-
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		driver.findElement(ProfileSettingsLabel).click();
-		driver.findElement(LanguageField).clear();
-		driver.findElement(LanguageField).sendKeys("English");
-		driver.findElement(SelectIdiom).click();
-		driver.findElement(SaveChangesButton).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/preferences", driver.getCurrentUrl());
-
-	}
-	
-	public void SpanishPreferences() {
-
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		driver.findElement(ProfileSettingsLabel).click();
-		driver.findElement(LanguageField).clear();
-		driver.findElement(LanguageField).sendKeys("Español");
-		driver.findElement(SelectIdiom).click();
-		driver.findElement(SaveChangesButton).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/preferences", driver.getCurrentUrl());
-
+	public static void gotoaccountlabel() throws Exception {
+		Start.driver.findElement(MyAccountLabel).click();
+		Thread.sleep(2000);
 	}
 
 }

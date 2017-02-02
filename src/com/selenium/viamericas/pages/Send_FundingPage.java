@@ -48,12 +48,12 @@ public class Send_FundingPage {
 
     public static void addroutingnumber() throws Exception {
         Thread.sleep(3000);
-        Start.driver.findElement(routingname).sendKeys("000110000");
+        Start.driver.findElement(routingname).sendKeys("021000021");
     }
 
     public static void addnumber() throws Exception {
         Thread.sleep(3000);
-        Start.driver.findElement(accountnumber).sendKeys("11010101110");
+        Start.driver.findElement(accountnumber).sendKeys("111111111111");
     }
 
     public static void selecttype() throws Exception {
