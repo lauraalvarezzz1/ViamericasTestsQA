@@ -46,7 +46,12 @@ public class MyAccount {
 
 	public static void gotoaccountlabel() throws Exception {
 		Start.driver.findElement(MyAccountLabel).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+	}
+
+	public static void gotocardandbankaccounts() throws Exception {
+		Start.driver.findElement(AccountsLabel).click();
+		Thread.sleep(5000);
 	}
 
 }
