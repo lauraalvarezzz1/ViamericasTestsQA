@@ -48,6 +48,7 @@ public class ProfileSettings {
     @Test(enabled = true, priority = 1)
 
     public void EditProfileSettings() throws Exception {
+        //ProfileSettingsPage.cleandropdowns();
         //ProfileSettingsPage.ProfileSettingsLabel();
         ProfileSettingsPage.changethefisrtname();
         ProfileSettingsPage.changetheLastNameField();
