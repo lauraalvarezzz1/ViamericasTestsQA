@@ -38,13 +38,13 @@ public class AdminPage {
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("admin-accepted-tc-pp-history"));
     }
 
-    @Test (enabled = true, priority = 1)
+    @Test (enabled = true, priority = 2)
     public void gototermsandconditions() throws Exception {
         Terms_and_ConditionsPage.gotothetermsandconditions();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("admin-terms-and-conditions"));
     }
 
-    @Test (enabled = true, priority = 2)
+    @Test (enabled = true, priority = 1)
     public void gotoprivacypolicy() throws Exception {
         PrivacyPolicyPage.gototheprivacypolicy();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("admin-privacy-policy"));
