@@ -1,6 +1,8 @@
 package com.selenium.viamericas.subpages;
 
+import com.selenium.viamericas.utility.Start;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class Recipients {
@@ -37,7 +39,7 @@ public class Recipients {
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[1]/div[6]/input");
 	public static By AddressLine1 = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[1]/div[8]/input");
-	public static By AdressLine2 = By
+	public static By AddressLine2 = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[1]/div[9]/input");
 	public static By zipCode = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[1]/div[11]/div/div[2]/input");
@@ -60,4 +62,130 @@ public class Recipients {
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[2]/div[2]/div[5]/input");
 	public static By accountType = By.xpath(".//*[@placeholder='Account Type']");
 	public static By createbuttonwithintheform = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/div/div/button");
+
+	public static void GotoRecipients() throws InterruptedException {
+		Start.driver.findElement(RecipientsLabel).click();
+		Thread.sleep(1000);
+	}
+
+	public static void clickOnCreate() throws InterruptedException {
+		Start.driver.findElement(createButton).click();
+		Thread.sleep(1000);
+	}
+
+	public static void completethefirstName() throws InterruptedException {
+		Start.driver.findElement(firstName).sendKeys("Christian");
+		Thread.sleep(1000);
+	}
+
+	public static void completetheMiddleName() throws InterruptedException {
+		Start.driver.findElement(middleName).sendKeys("Mauricio");
+		Thread.sleep(1000);
+	}
+
+	public static void completetheLastName() throws InterruptedException {
+		Start.driver.findElement(lastName).sendKeys("Preciado");
+		Thread.sleep(1000);
+	}
+
+	public static void completethesecondName() throws InterruptedException {
+		Start.driver.findElement(secondLastName).sendKeys("Hernandez");
+		Thread.sleep(1000);
+	}
+
+	public static void completethemobilesecondnumber() throws InterruptedException {
+		Start.driver.findElement(mobilePhoneNumber).sendKeys("3105647292");
+		Thread.sleep(1000);
+	}
+
+	public static void setEmailAddressOptional() throws InterruptedException {
+		Start.driver.findElement(emailAddressOptional).sendKeys("Christian.preciado@talosdigital.com");
+		Thread.sleep(1000);
+	}
+
+	public static void setAddressLine1() throws InterruptedException {
+		Start.driver.findElement(AddressLine1).sendKeys("Cra 50 # 45-67");
+		Thread.sleep(1000);
+	}
+
+	public static void setAddressLine2() throws InterruptedException {
+		Start.driver.findElement(AddressLine2).sendKeys("Calle 54 # 584-lK");
+		Thread.sleep(1000);
+	}
+
+	public static void setzipcode() throws InterruptedException {
+		Start.driver.findElement(zipCode).sendKeys("90002");
+		Thread.sleep(1000);
+	}
+
+	public static void providethemonth() throws InterruptedException {
+		Start.driver.findElement(monthdropdown).sendKeys("01");
+		Start.driver.findElement(monthdropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(monthdropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void providetheday() throws InterruptedException {
+		Start.driver.findElement(daydropdown).sendKeys("18");
+		Start.driver.findElement(daydropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(daydropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void providetheyear() throws InterruptedException {
+		Start.driver.findElement(yeardropdown).sendKeys("1989");
+		Start.driver.findElement(yeardropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(yeardropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void providethecountry() throws InterruptedException {
+		Start.driver.findElement(countrydropdown).sendKeys("COLOMBIA");
+		Start.driver.findElement(countrydropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(countrydropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void providethestate() throws InterruptedException {
+		Start.driver.findElement(statedropdown).sendKeys("ANTIOQUIA");
+		Start.driver.findElement(statedropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(statedropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void providethecity() throws InterruptedException {
+		Start.driver.findElement(citydropdown).sendKeys("MEDELLIN");
+		Start.driver.findElement(citydropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(citydropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void setChooseabank() throws InterruptedException {
+		Start.driver.findElement(chooseabank).sendKeys("BANCOLOMBIA");
+		Start.driver.findElement(chooseabank).sendKeys(Keys.DOWN);
+		Start.driver.findElement(chooseabank).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void setAccountHolderName() throws InterruptedException {
+		Start.driver.findElement(accountHolderName).sendKeys("Christian Preciado Hernandez");
+		Thread.sleep(1000);
+	}
+
+	public static void setAccountNumber() throws InterruptedException {
+		Start.driver.findElement(accountNumber).sendKeys("00010219191001");
+		Thread.sleep(1000);
+	}
+
+	public static void setAccountType() throws InterruptedException {
+		Start.driver.findElement(accountType).sendKeys("SAVINGS ACCOUNT");
+		Start.driver.findElement(accountType).sendKeys(Keys.DOWN);
+		Start.driver.findElement(accountType).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	}
+
+	public static void createrecipient() throws InterruptedException {
+		Start.driver.findElement(createbuttonwithintheform).click();
+		Thread.sleep(1000);
+	}
 }
