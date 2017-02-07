@@ -54,7 +54,7 @@ public class Recipients {
 
 	//<--------NEW BANK ACCOUNT----------->
 	public static By currency = By.xpath(".//*[@placeholder='Currency']");
-	public static By chooseabank = By.xpath(".//*[@placeholder='Choose a bank']");
+	public static By chooseabank = By.xpath(".//*[@placeholder='Choose a Bank']");
 
 	public static By accountHolderName = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[2]/div[2]/div[4]/input");
@@ -164,12 +164,12 @@ public class Recipients {
 		Start.driver.findElement(chooseabank).sendKeys("BANCOLOMBIA");
 		Start.driver.findElement(chooseabank).sendKeys(Keys.DOWN);
 		Start.driver.findElement(chooseabank).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 
 	public static void setAccountHolderName() throws InterruptedException {
 		Start.driver.findElement(accountHolderName).sendKeys("Christian Preciado Hernandez");
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 	}
 
 	public static void setAccountNumber() throws InterruptedException {
