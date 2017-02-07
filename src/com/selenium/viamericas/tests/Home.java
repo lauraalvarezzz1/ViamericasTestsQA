@@ -33,6 +33,7 @@ public class Home {
     @Test(enabled = true, priority = 1)
     public void checkgotoSignUpwithouLogin() throws Exception {
         HomePage.logOut();
+        Thread.sleep(2000);
         HomePage.clickSignUp();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("account/register"));
     }
