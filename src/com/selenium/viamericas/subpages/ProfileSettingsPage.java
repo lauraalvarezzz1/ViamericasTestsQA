@@ -62,6 +62,7 @@ public class ProfileSettingsPage {
 	public static By City = By.xpath(".//*[@placeholder='City]");
 
 	public static By closepopup = By.xpath("/html/body/div[3]/div[2]/span");
+	public static By dropdownsgeneral = By.xpath(".//*[@id='dropdown-input']");
 	
 
 
@@ -102,11 +103,11 @@ public class ProfileSettingsPage {
 
 	public static void changestate() throws InterruptedException {
 		Start.driver.findElement(State).clear();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Start.driver.findElement(State).sendKeys("CALIFORNIA");
 		Start.driver.findElement(State).sendKeys(Keys.DOWN);
 		Start.driver.findElement(State).sendKeys(Keys.ENTER);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	public static void changecity() throws InterruptedException {
@@ -125,7 +126,7 @@ public class ProfileSettingsPage {
 
 	public static void gotochangepassword() throws InterruptedException {
 		Start.driver.findElement(ChangePasswordButton).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	public static void addthecurrentpassword() throws InterruptedException {
@@ -153,4 +154,8 @@ public class ProfileSettingsPage {
 		Thread.sleep(2000);
 	}
 
+	public static void cleandropdowns() throws InterruptedException {
+		Start.driver.findElement(dropdownsgeneral).clear();
+		Thread.sleep(2000);
+	}
 }

@@ -1,12 +1,12 @@
 package com.selenium.viamericas.subpages;
 
+import com.selenium.viamericas.utility.Start;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class Accounts {
-
-	WebDriver driver;
 
 	// It's optional because here is created the page: ProfileSettings
 	public static By LoginLabel = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/a");
@@ -28,13 +28,13 @@ public class Accounts {
 	public static By VerifyAccountButton = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/button[1]");
 	public static By CreateAccountButton = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/button");
+			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[1]/div/button");
 	public static By CreateBankAccountButton = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[1]/div[1]/div/div");
 	public static By CreateCardAccountButton = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[1]/div[2]/div/div");
 	public static By CreateAccountWithinTheForm = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[1]/button");
+			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[2]/button");
 
 	// Create Bank Account
 	public static By BankAccountHolderName = By
@@ -45,7 +45,7 @@ public class Accounts {
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[1]/div[3]/input");
 	public static By BankAccountNumber = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[1]/div[4]/input");
-	public static By BankAccountType = By.xpath(".//*[@placeholder='Account Type]");
+	public static By BankAccountType = By.xpath(".//*[@id='dropdown-input']");
 	public static By BankSelectoptionAccountType = By.xpath(".//*[@id='dropdown-list']");
 
 	// Create Card Account
@@ -63,91 +63,94 @@ public class Accounts {
 	
 	public static By CVVCode = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[2]/div[6]/input");
+	public static By closepopup = By.xpath("html/body/div[3]/div[2]/span");
 
-	
-
-	public Accounts(WebDriver driver) {
-		this.driver = driver;
+	public static void gotoaccounts() throws Exception {
+		Start.driver.findElement(AccountsLabel).click();
+		Thread.sleep(2000);
 	}
 
-	public void CreateBankAccount() {
-
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		driver.findElement(AccountsLabel).click();
-		driver.findElement(CreateAccountButton).click();
-		driver.findElement(CreateBankAccountButton).click();
-		//For default Credit/Debit form is in Credit card
-		driver.findElement(BankAccountHolderName).sendKeys("Laura Alvarez Galviz");
-		driver.findElement(BankAccountNickname).sendKeys("LaurisA");
-		driver.findElement(BankRoutingNumber).sendKeys("000110000");
-		driver.findElement(BankAccountNumber).sendKeys("0101010101011010");
-		driver.findElement(BankSelectoptionAccountType).sendKeys("Savings Account");
-		driver.findElement(SelectOptions).click();
-		driver.findElement(CreateAccountWithinTheForm).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
-
+	public static void clickoncreatebutton() throws Exception {
+		Start.driver.findElement(CreateAccountButton).click();
+		Thread.sleep(4000);
 	}
 
-	public void CreateCardAccount() {
-
-		driver.findElement(LoginLabel).click();
-		driver.findElement(UsernameInput).sendKeys("laura.alvarez@talosdigital.com");
-		driver.findElement(PasswordInput).sendKeys("Laura123");
-		driver.findElement(SignInButton).click();
-		driver.findElement(MyAccountLabel).click();
-		driver.findElement(AccountsLabel).click();
-		driver.findElement(CreateAccountButton).click();
-		driver.findElement(CreateCardAccountButton).click();
-		//For default Credit/Debit form is in Credit card
-		driver.findElement(CardHolderName).sendKeys("JENNA MOLLIGAN");
-		driver.findElement(CardNumber).sendKeys("4024007122828303");
-		driver.findElement(CVVCode).sendKeys("617");
-		driver.findElement(MonthDropdown).sendKeys("04");
-		driver.findElement(SelectOptions).click();
-		driver.findElement(YearDropdown).sendKeys("2017");
-		driver.findElement(SelectOptions).click();
-		driver.findElement(CreateAccountWithinTheForm).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
-
+	public static void clickoncreateBankAccount() throws Exception {
+		Start.driver.findElement(CreateBankAccountButton).click();
+		Thread.sleep(2000);
 	}
-	
-	public void CreateCardAccountAfterMyAccount() {
-		
-		driver.findElement(AccountsLabel).click();
-		driver.findElement(CreateAccountButton).click();
-		driver.findElement(CreateCardAccountButton).click();
-		//For default Credit/Debit form is in Credit card
-		driver.findElement(CardHolderName).sendKeys("JENNA MOLLIGAN");
-		driver.findElement(CardNumber).sendKeys("4024007122828303");
-		driver.findElement(CVVCode).sendKeys("617");
-		driver.findElement(MonthDropdown).sendKeys("04");
-		driver.findElement(SelectOptions).click();
-		driver.findElement(YearDropdown).sendKeys("2017");
-		driver.findElement(SelectOptions).click();
-		driver.findElement(CreateAccountWithinTheForm).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
 
+	public static void clickoncardAccount() throws Exception {
+		Start.driver.findElement(CreateCardAccountButton).click();
+		Thread.sleep(2000);
 	}
-	
-	
-	public void CreateBankAccountAfterMyAccount() {
-		
-		driver.findElement(AccountsLabel).click();
-		driver.findElement(CreateAccountButton).click();
-		driver.findElement(CreateBankAccountButton).click();
-		//For default Credit/Debit form is in Credit card
-		driver.findElement(BankAccountHolderName).sendKeys("Laura Alvarez Galviz");
-		driver.findElement(BankAccountNickname).sendKeys("LaurisA");
-		driver.findElement(BankRoutingNumber).sendKeys("000110000");
-		driver.findElement(BankAccountNumber).sendKeys("0101010101011010");
-		driver.findElement(BankSelectoptionAccountType).sendKeys("Savings Account");
-		driver.findElement(SelectOptions).click();
-		driver.findElement(CreateAccountWithinTheForm).click();
-		Assert.assertEquals("https://www.govianex.com/#/settings/accounts", driver.getCurrentUrl());
 
+	// Create Bank Account
+	public static void addthecardholdername() throws Exception {
+		Start.driver.findElement(CardHolderName).sendKeys("JULIA OGDEN");
+		Thread.sleep(2000);
 	}
+
+	public static void addcardnumber() throws Exception {
+		Start.driver.findElement(CardNumber).sendKeys("4929160617587896");
+		Thread.sleep(2000);
+	}
+
+	public static void addcvvcode() throws Exception {
+		Start.driver.findElement(CVVCode).sendKeys("918");
+		Thread.sleep(2000);
+	}
+
+	public static void selectmonth() throws Exception {
+		Start.driver.findElement(MonthDropdown).sendKeys("07");
+		Start.driver.findElement(MonthDropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(MonthDropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+	}
+
+	public static void selectyear() throws Exception {
+		Start.driver.findElement(YearDropdown).sendKeys("2018");
+		Start.driver.findElement(YearDropdown).sendKeys(Keys.DOWN);
+		Start.driver.findElement(YearDropdown).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+	}
+
+	public static void clickoncreateaccount() throws Exception {
+		Start.driver.findElement(CreateAccountWithinTheForm).click();
+		Thread.sleep(2000);
+	}
+
+	//create bank account
+	public static void addbankholdername() throws Exception {
+		Start.driver.findElement(BankAccountHolderName).sendKeys("Laura");
+		Thread.sleep(2000);
+	}
+
+	public static void addbanknickname() throws Exception {
+		Start.driver.findElement(BankAccountNickname).sendKeys("Laura");
+		Thread.sleep(2000);
+	}
+
+	public static void addroutingnumber() throws Exception {
+		Start.driver.findElement(BankRoutingNumber).sendKeys("211370545");
+		Thread.sleep(2000);
+	}
+
+	public static void addaccountnumber() throws Exception {
+		Start.driver.findElement(BankAccountNumber).sendKeys("1234567890");
+		Thread.sleep(2000);
+	}
+
+	public static void selecttype() throws Exception {
+		Start.driver.findElement(BankAccountType).sendKeys("SAVING");
+		Start.driver.findElement(BankAccountType).sendKeys(Keys.DOWN);
+		Start.driver.findElement(BankAccountType).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+	}
+
+	public static void clickonclosepopup() throws Exception {
+		Start.driver.findElement(closepopup).click();
+		Thread.sleep(2000);
+	}
+
 }
