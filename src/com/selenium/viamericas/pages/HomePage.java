@@ -21,11 +21,11 @@ public class HomePage {
     public static By spanishoption = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[1]/ul/li[2]");
     public static By customerservicelabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[2]/a");
     public static By myaccountlabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
-    public static By logoutlabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[6]/a");
+    public static By logoutlabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[7]/a");
 
     //Buttons
     public static By getaQuoteButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/section[2]/div/div[2]/a[1]");
-    public static By SignUpButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/section[2]/div/div[2]/a[2]");
+    public static By SignUpButton = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/button[1]");
 
     //Home Page Links
     public static By logoIcon = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/logo-viamericas/div/a/img");

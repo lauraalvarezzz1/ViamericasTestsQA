@@ -1,5 +1,6 @@
 package com.selenium.viamericas.subpages;
 
+import com.selenium.viamericas.utility.DataGenerators;
 import com.selenium.viamericas.utility.Start;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -137,7 +138,7 @@ public class Accounts {
 	}
 
 	public static void addaccountnumber() throws Exception {
-		Start.driver.findElement(BankAccountNumber).sendKeys("1234567890");
+		Start.driver.findElement(BankAccountNumber).sendKeys(DataGenerators.generateAccountnumber());
 		Thread.sleep(2000);
 	}
 
