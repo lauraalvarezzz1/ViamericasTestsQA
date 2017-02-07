@@ -58,8 +58,8 @@ public class ProfileSettingsPage {
 	public static By RepeatPasswordField = By
 			.xpath(".//*[@id='newPasswordConfirm']");
 
-	public static By State = By.xpath(".//*[@placeholder='State]");
-	public static By City = By.xpath(".//*[@placeholder='City]");
+	public static By State = By.xpath(".//*[@placeholder='State']");
+	public static By City = By.xpath(".//*[@placeholder='City']");
 
 	public static By closepopup = By.xpath("/html/body/div[3]/div[2]/span");
 	public static By dropdownsgeneral = By.xpath(".//*[@id='dropdown-input']");
@@ -68,13 +68,13 @@ public class ProfileSettingsPage {
 
 	public static void GotoProfileSettings() throws InterruptedException {
 		Start.driver.findElement(ProfileSettingsLabel).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	public static void changethefisrtname() throws InterruptedException {
 		Start.driver.findElement(FirstNameField).clear();
 		Start.driver.findElement(FirstNameField).sendKeys("Laura");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	public static void changethemiddlename() throws InterruptedException {
@@ -86,24 +86,23 @@ public class ProfileSettingsPage {
 	public static void changetheLastNameField() throws InterruptedException {
 		Start.driver.findElement(LastNameField).clear();
 		Start.driver.findElement(LastNameField).sendKeys("Galviz");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	public static void changetheMobilePhoneNumberField() throws InterruptedException {
 		Start.driver.findElement(MobilePhoneNumberField).clear();
 		Start.driver.findElement(MobilePhoneNumberField).sendKeys("3122066063");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	public static void changetheaddressline1() throws InterruptedException {
 		Start.driver.findElement(AdressLine1Field).clear();
 		Start.driver.findElement(AdressLine1Field).sendKeys("Carrera 65 # 45 - 56");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	public static void changestate() throws InterruptedException {
 		Start.driver.findElement(State).clear();
-		Thread.sleep(3000);
 		Start.driver.findElement(State).sendKeys("CALIFORNIA");
 		Start.driver.findElement(State).sendKeys(Keys.DOWN);
 		Start.driver.findElement(State).sendKeys(Keys.ENTER);
@@ -121,7 +120,7 @@ public class ProfileSettingsPage {
 
 	public static void clickupdatebutton() throws InterruptedException {
 		Start.driver.findElement(UpdateButton).click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 	}
 
 	public static void gotochangepassword() throws InterruptedException {

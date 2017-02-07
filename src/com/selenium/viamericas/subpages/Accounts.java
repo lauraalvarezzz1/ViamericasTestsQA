@@ -51,15 +51,15 @@ public class Accounts {
 	// Create Card Account
 	public static By SelectOptions = By.xpath(".//*[@id='dropdown-list']");//Select any option
 	
-	public static By CardType = By.xpath(".//*[@placeholder='Card Type]");
+	public static By CardType = By.xpath(".//*[@placeholder='Card Type']");
 	public static By CardHolderName = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[2]/div[2]/input");
 	public static By CardNickname = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[2]/div[3]/input"); //OPTIONAL
 	public static By CardNumber = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[2]/div[4]/input");
-	public static By MonthDropdown = By.xpath(".//*[@placeholder='Month]");
-	public static By YearDropdown = By.xpath(".//*[@placeholder='Year]");
+	public static By MonthDropdown = By.xpath(".//*[@placeholder='Month']");
+	public static By YearDropdown = By.xpath(".//*[@placeholder='Year']");
 	
 	public static By CVVCode = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/form[2]/div[6]/input");
