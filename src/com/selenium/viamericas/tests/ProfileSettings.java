@@ -32,7 +32,7 @@ public class ProfileSettings {
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
 
-    @Test(enabled = true, priority = 2)
+    @Test(enabled = true, priority = 1)
 
     public void ChangePassword() throws Exception {
         ProfileSettingsPage.gotochangepassword();
@@ -45,17 +45,17 @@ public class ProfileSettings {
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
 
-    @Test(enabled = true, priority = 1)
+    @Test(enabled = true, priority = 2)
 
     public void EditProfileSettings() throws Exception {
-        //ProfileSettingsPage.cleandropdowns();
-        //ProfileSettingsPage.ProfileSettingsLabel();
         ProfileSettingsPage.changethefisrtname();
         ProfileSettingsPage.changetheLastNameField();
         ProfileSettingsPage.changetheMobilePhoneNumberField();
         ProfileSettingsPage.changetheaddressline1();
         ProfileSettingsPage.changestate();
+        ProfileSettingsPage.gotoclosepopup();
         ProfileSettingsPage.changecity();
+        ProfileSettingsPage.gotoclosepopup();
         ProfileSettingsPage.clickupdatebutton();
         ProfileSettingsPage.gotoclosepopup();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
