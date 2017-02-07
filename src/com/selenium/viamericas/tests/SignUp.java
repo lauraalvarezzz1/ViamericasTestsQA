@@ -65,7 +65,6 @@ public class SignUp {
 
     @Test(enabled = true, priority = 5)
     public void createbutton() throws Exception {
-
         SignUpPage.acceptTCPP();
         SignUpPage.createbutton();
         //Assert.assertTrue(Start.driver.getCurrentUrl().contains("confirm"));

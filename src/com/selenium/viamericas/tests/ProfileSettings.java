@@ -26,14 +26,12 @@ public class ProfileSettings {
     }
 
     @Test(enabled = true, priority = 0)
-
     public void gotoMyaccount() throws Exception {
         com.selenium.viamericas.pages.MyAccount.gotoaccountlabel();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
 
     @Test(enabled = true, priority = 2)
-
     public void ChangePassword() throws Exception {
         ProfileSettingsPage.gotochangepassword();
         ProfileSettingsPage.addthecurrentpassword();
@@ -46,7 +44,6 @@ public class ProfileSettings {
     }
 
     @Test(enabled = true, priority = 1)
-
     public void EditProfileSettings() throws Exception {
         //ProfileSettingsPage.cleandropdowns();
         //ProfileSettingsPage.ProfileSettingsLabel();
