@@ -56,11 +56,6 @@ public class ComplianceTest {
         CompliancePage.selectConnecticut();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("compliance"));}
 
-    @Test(enabled = true, priority = 7)
-    public void selectConnecticut() throws Exception {
-        CompliancePage.selectConnecticut();
-        Assert.assertTrue(Start.driver.getCurrentUrl().contains("compliance"));}
-
     @Test(enabled = true, priority = 8)
     public void selectDelaware() throws Exception {
         CompliancePage.selectDelaware();
