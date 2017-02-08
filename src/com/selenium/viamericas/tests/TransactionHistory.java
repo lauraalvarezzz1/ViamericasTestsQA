@@ -33,6 +33,7 @@ public class TransactionHistory {
     public void verify(){
         Assert.assertNotNull(TransactionHistoryPage.repeattransactionbutton);
     }
+
     @Test(enabled = true, priority = 2)
     public void verifywrongemail(){
         Assert.assertNotNull(TransactionHistoryPage.historylabel);

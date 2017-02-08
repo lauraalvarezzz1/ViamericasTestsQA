@@ -30,7 +30,6 @@ public class AdminPage {
 
     @Test (enabled = true, priority = 0)
     public void gotoTCCPPHistory() throws Exception {
-
         TCPPHistoryPage.gotoadminlabeloption();
         TCPPHistoryPage.clickAcceptedTCPPHistory();
         TCPPHistoryPage.clickonthefirsemail();

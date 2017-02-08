@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.SystemClock;
 public class Send_DestinationPage {
 
     public static By countrydropdown = By.xpath(".//*[@placeholder='Country']");
-    public static By sendAmount = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[2]/div[1]/div/input");
-    public static By bankdepositButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/div[1]/div[1]/div");
+    public static By sendAmount = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[5]/div[1]/div/input");
+    public static By bankdepositButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[3]/div[1]/div[1]/div");
     public static By cashpickupbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/div[1]/div[2]/div");
     public static By bankdropdown = By.xpath(".//*[@placeholder='Choose a Bank']");
     public static By continueButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[2]");
@@ -22,11 +22,10 @@ public class Send_DestinationPage {
     public static void selectCountry() throws Exception {
         Thread.sleep(3000);
         Start.driver.findElement(countrydropdown).sendKeys("COLOMBIA");
-    }
-
-    public static void selectamounttoSend() throws Exception {
+        Start.driver.findElement(countrydropdown).sendKeys(Keys.DOWN);
+        Start.driver.findElement(countrydropdown).sendKeys(Keys.ENTER);
         Thread.sleep(3000);
-        Start.driver.findElement(sendAmount).sendKeys("100");
+
     }
 
     public static void howMoneyRecieved(String mode) throws Exception {
@@ -45,6 +44,12 @@ public class Send_DestinationPage {
         Start.driver.findElement(bankdropdown).sendKeys(Keys.DOWN);
         Start.driver.findElement(bankdropdown).sendKeys(Keys.ENTER);
         Thread.sleep(3000);
+    }
+
+
+    public static void selectamounttoSend() throws Exception {
+        Thread.sleep(3000);
+        Start.driver.findElement(sendAmount).sendKeys("100");
     }
 
     public static void goandcontinue() throws Exception {
