@@ -45,14 +45,15 @@ public class ProfileSettings {
 
     @Test(enabled = true, priority = 1)
     public void EditProfileSettings() throws Exception {
-        //ProfileSettingsPage.cleandropdowns();
-        //ProfileSettingsPage.ProfileSettingsLabel();
+        ProfileSettingsPage.cleandropdowns();
         ProfileSettingsPage.changethefisrtname();
         ProfileSettingsPage.changetheLastNameField();
         ProfileSettingsPage.changetheMobilePhoneNumberField();
         ProfileSettingsPage.changetheaddressline1();
         ProfileSettingsPage.changestate();
+        ProfileSettingsPage.gotoclosepopup();
         ProfileSettingsPage.changecity();
+        ProfileSettingsPage.gotoclosepopup();
         ProfileSettingsPage.clickupdatebutton();
         ProfileSettingsPage.gotoclosepopup();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
