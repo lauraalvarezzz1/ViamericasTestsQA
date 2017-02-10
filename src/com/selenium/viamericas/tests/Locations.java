@@ -26,7 +26,6 @@ public class Locations {
 
     @Test(enabled = true, priority = 0)
     public void verifyMapfunctionality() throws Exception {
-
     }
 
     @Test(enabled = true, priority = 1)
@@ -40,12 +39,10 @@ public class Locations {
 
     @Test(enabled = true, priority = 3)
     public void verifywrongpassword() throws Exception {
-
     }
 
     @Test(enabled = true, priority = 4)
     public void validationpassword(){
-
     }
 
 }

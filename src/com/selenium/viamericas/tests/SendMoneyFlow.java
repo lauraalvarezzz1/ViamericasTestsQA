@@ -25,10 +25,10 @@ public class SendMoneyFlow {
         @Test (enabled = true, priority = 0)
         public void FillDestinationInformation() throws Exception {
             Send_DestinationPage.selectCountry();
-            Send_DestinationPage.selectamounttoSend();
             Send_DestinationPage.howMoneyRecieved("BankDeposit");
             Send_DestinationPage.chooseBank();
             Assert.assertNotNull(Send_DestinationPage.exchangerate);
+            Send_DestinationPage.selectamounttoSend();
             Send_DestinationPage.goandcontinue();
             Assert.assertTrue(Start.driver.getCurrentUrl().contains("recipient"));
         }
