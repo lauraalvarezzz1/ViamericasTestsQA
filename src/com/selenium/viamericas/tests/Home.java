@@ -13,10 +13,9 @@ public class Home {
 
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("dev");
+        Start.initiate("test");
         HomePage.Goto("login");
         LoginPage.login("cristhian.preciado@talosdigital.com", "Test4echo");
-
     }
 
     @AfterClass
@@ -33,14 +32,14 @@ public class Home {
     @Test(enabled = true, priority = 1)
     public void checkgotoSignUpwithouLogin() throws Exception {
         HomePage.logOut();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         HomePage.clickSignUp();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("account/register"));
     }
     @Test(enabled = true, priority = 2)
     public void checkAboutUsPage() throws Exception {
         Start.driver.get(Start.baseurl);
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         HomePage.footerGoto("aboutus");
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("about-us"));
     }

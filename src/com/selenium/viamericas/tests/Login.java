@@ -12,7 +12,7 @@ public class Login {
 
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("dev");
+        Start.initiate("test");
         HomePage.Goto("login");
         System.out.println("//------------------");
     }

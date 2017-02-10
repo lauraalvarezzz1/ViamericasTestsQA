@@ -8,21 +8,19 @@ import org.testng.annotations.Test;
 import com.selenium.viamericas.utility.Start;
 import org.openqa.selenium.WebDriver;
 
-/**
- * Created by lauraalvarez on 30/01/17.
- */
+
 public class SignUp {
 
 
 
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("dev");
+        Start.initiate("test");
     }
 
     @AfterClass
     public void finish() {
-        //Start.driver.quit();
+        Start.driver.quit();
     }
 
     @Test(enabled = true, priority = 0)

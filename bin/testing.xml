@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression suite">
+      <test name="Home">
+          <classes >
+              <class name="com.selenium.viamericas.tests.Home"/>
+          </classes>
+      </test>
+    <test name="Login">
+        <classes >
+            <class name="com.selenium.viamericas.tests.Login"/>
+        </classes>
+    </test>
+    <test name="transaction history">
+        <classes >
+            <class name="com.selenium.viamericas.tests.TransactionHistory"/>
+        </classes>
+    </test>
+    <test name="getaquote">
+        <classes >
+            <class name="com.selenium.viamericas.tests.GetaQuote"/>
+        </classes>
+    </test>
+    <test name="locations">
+        <classes >
+            <class name="com.selenium.viamericas.tests.Locations"/>
+        </classes>
+    </test>
+    <test name="howitworks">
+        <classes >
+            <class name="com.selenium.viamericas.tests.HowitWorks"/>
+        </classes>
+    </test>
+    <test name="profilesettings">
+        <classes >
+            <class name="com.selenium.viamericas.tests.ProfileSettings"/>
+        </classes>
+    </test>
+    <test name="addacount">
+        <classes >
+            <class name="com.selenium.viamericas.tests.AddAccounts"/>
+        </classes>
+    </test>
+    <test name="addrecipients">
+        <classes >
+            <class name="com.selenium.viamericas.tests.AddRecipients"/>
+        </classes>
+    </test>
+    <test name="AdminPage">
+        <classes >
+            <class name="com.selenium.viamericas.tests.AdminPage"/>
+        </classes>
+    </test>
+    <test name="sign up">
+        <classes >
+        <class name="com.selenium.viamericas.tests.SignUp"/>
+        </classes>
+    </test>
+</suite>
+

@@ -11,13 +11,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-/**
- * Created by lauraalvarez on 1/02/17.
- */
+
 public class AdminPage {
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("dev");
+        Start.initiate("test");
         HomePage.Goto("login");
         LoginPage.login("viamericas@gmail.com", "admin");
         HomePage.Goto("adminpage");

@@ -11,7 +11,7 @@ public class SendMoneyFlow {
 
         @BeforeClass
         public void start() throws Exception {
-            Start.initiate("dev");
+            Start.initiate("test");
             HomePage.Goto("login");
             LoginPage.login("cristhian.preciado@talosdigital.com", "Test4echo");
             HomePage.Goto("sendmoney");

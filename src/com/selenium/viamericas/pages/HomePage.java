@@ -73,37 +73,37 @@ public class HomePage {
     public static void footerGoto(String pag) throws Exception {
         if(pag.equalsIgnoreCase("aboutus")){
             Start.driver.findElement(aboutus).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("leadership")){
             Start.driver.findElement(leadership).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("careers")){
             Start.driver.findElement(careers).click();
             Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("news")){
             Start.driver.findElement(news).click();
-           Thread.sleep(1500);
+           Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("payernetwork")){
             Start.driver.findElement(payernetwork).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("compliance")){
             Start.driver.findElement(compliance).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("fileacompliance")){
             Start.driver.findElement(fileaCompliance).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("faq")){
             Start.driver.findElement(FAQ).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("contactus")){
             Start.driver.findElement(contactUs).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("privacypolicy")){
             Start.driver.findElement(privacyPolicy).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("termsandconditions")){
             Start.driver.findElement(termsandConditions).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }
     }
 
@@ -123,7 +123,7 @@ public class HomePage {
 
     public static void clickSignUp() throws Exception {
         Start.driver.findElement(SignUpButton).click();
-        Thread.sleep(1500);
+        Thread.sleep(3000);
     }
 
     public static void logOut(){
