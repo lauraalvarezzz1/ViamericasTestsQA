@@ -10,49 +10,69 @@
             <class name="com.selenium.viamericas.tests.Login"/>
         </classes>
     </test>
-    <test name="transaction history">
+    <test name="Transaction history">
         <classes >
             <class name="com.selenium.viamericas.tests.TransactionHistory"/>
         </classes>
     </test>
-    <test name="getaquote">
+    <test name="Get a Quote">
         <classes >
             <class name="com.selenium.viamericas.tests.GetaQuote"/>
         </classes>
     </test>
-    <test name="locations">
+    <test name="Locations">
         <classes >
             <class name="com.selenium.viamericas.tests.Locations"/>
         </classes>
     </test>
-    <test name="howitworks">
+    <test name="How it works">
         <classes >
             <class name="com.selenium.viamericas.tests.HowitWorks"/>
         </classes>
     </test>
-    <test name="profilesettings">
+    <test name="Profile settings">
         <classes >
             <class name="com.selenium.viamericas.tests.ProfileSettings"/>
         </classes>
     </test>
-    <test name="addacount">
+    <test name="Add Account">
         <classes >
             <class name="com.selenium.viamericas.tests.AddAccounts"/>
         </classes>
     </test>
-    <test name="addrecipients">
+    <test name="Add recipients">
         <classes >
             <class name="com.selenium.viamericas.tests.AddRecipients"/>
         </classes>
     </test>
-    <test name="AdminPage">
+    <test name="Admin Page">
         <classes >
             <class name="com.selenium.viamericas.tests.AdminPage"/>
         </classes>
     </test>
-    <test name="sign up">
+    <test name="Payers Network">
+        <classes >
+            <class name="com.selenium.viamericas.tests.PayerNetwokTest"/>
+        </classes>
+    </test>
+    <test name="Compliance">
+        <classes >
+            <class name="com.selenium.viamericas.tests.ComplianceTest"/>
+        </classes>
+    </test>
+    <test name="Sign up">
         <classes >
         <class name="com.selenium.viamericas.tests.SignUp"/>
+        </classes>
+    </test>
+    <test name="Footer tests">
+        <classes >
+            <class name="com.selenium.viamericas.tests.FooterTests"/>
+        </classes>
+    </test>
+    <test name="Send Money flow">
+        <classes >
+            <class name="com.selenium.viamericas.tests.SendMoneyFlow"/>
         </classes>
     </test>
 </suite>

@@ -9,13 +9,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-/**
- * Created by lauraalvarez on 8/02/17.
- */
 public class PayerNetwokTest {
 
     @BeforeClass
-    public void start() throws Exception {Start.initiate("dev");}
+    public void start() throws Exception {Start.initiate("test");}
 
     @AfterClass
     public void finish() {
