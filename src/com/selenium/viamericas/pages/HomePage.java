@@ -123,7 +123,7 @@ public class HomePage {
 
     public static void clickSignUp() throws Exception {
         Start.driver.findElement(SignUpButton).click();
-        Thread.sleep(1500);
+        Thread.sleep(2000);
     }
 
     public static void logOut(){

@@ -13,6 +13,7 @@ public class Send_RecipientPage {
     public static By lastname = By.xpath("html/body/div[2]/div/div[1]/div[2]/div[1]/div/div/form/div[1]/div[2]/div[4]/input");
     public static By phonenumber = By.xpath("html/body/div[2]/div/div[1]/div[2]/div[1]/div/div/form/div[1]/div[2]/div[6]/input");
     public static By addressline1 = By.xpath("html/body/div[2]/div/div[1]/div[2]/div[1]/div/div/form/div[1]/div[2]/div[9]/input");
+    public static By emailaddress = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div[1]/div/div/form/div[1]/div[2]/div[7]/input");
 
     public static By month = By.xpath(".//*[@placeholder='Month']");
     public static By day = By.xpath(".//*[@placeholder='Day']");
@@ -61,6 +62,11 @@ public class Send_RecipientPage {
 
     public static void addadressline1() throws Exception {
         Start.driver.findElement(addressline1).sendKeys("Carrera 65");
+        Thread.sleep(2000);
+    }
+
+    public static void emailaddress() throws Exception {
+        Start.driver.findElement(emailaddress).sendKeys("laura.alvarez@talosdigital.com");
         Thread.sleep(2000);
     }
 
