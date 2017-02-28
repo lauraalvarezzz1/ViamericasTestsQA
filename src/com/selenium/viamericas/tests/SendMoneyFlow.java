@@ -39,6 +39,7 @@ public class SendMoneyFlow {
             Send_RecipientPage.completelastname();
             Send_RecipientPage.completephonenumber();
             Send_RecipientPage.addadressline1();
+            Send_RecipientPage.emailaddress();
             Send_RecipientPage.selectmonth();
             Send_RecipientPage.selectday();
             Send_RecipientPage.selectyear();
