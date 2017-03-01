@@ -28,7 +28,7 @@ public class FooterTests {
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("contact-us"));
     }
 
-    @Test(enabled = true, priority = 1)
+    @Test(enabled = false, priority = 1)
     public void Completecontactform() throws Exception {
         ContactUsPage.setyourname();
         ContactUsPage.setYouremailaddress();
