@@ -26,42 +26,36 @@ public class SignUp {
     @Test(enabled = true, priority = 0)
     public void gotosignup() throws Exception {
         SignUpPage.gotosignupform();
-        Assert.assertEquals(Start.driver.getCurrentUrl(), "https://test.govianex.com/#/account/register");
     }
 
     @Test(enabled = true, priority = 1)
+    public void gotothefirstform() throws Exception {
+        SignUpPage.addemailaddress("test@test.com");
+        SignUpPage.addpassword("test4echo");
+        SignUpPage.clickonsignupbutton();
+    }
+
+    @Test(enabled = true, priority = 2)
     public void completestringfields() throws Exception {
         SignUpPage.addfirstname("LAURA");
         SignUpPage.addlastname("ALVAREZ");
         SignUpPage.addmobilephonenumber("3117224425");
         SignUpPage.addadressline1("Calle 10");
+        SignUpPage.addday("01");
+        SignUpPage.addmonth("11");
+        SignUpPage.addyear("1998");
         SignUpPage.addzipcode("90001");
-        SignUpPage.addemailaddress("luis@gmail.com");
-    }
-
-    @Test(enabled = true, priority = 2)
-    public void selectcountrydropdown() throws Exception {
-        Thread.sleep(2000);
-        SignUpPage.selectcountry("UNITED STATES");
-        Assert.assertNotNull(SignUpPage.country);
 
     }
 
     @Test(enabled = true, priority = 3)
-    public void selectstatedropdown() throws Exception {
-        Thread.sleep(2000);
-        SignUpPage.selectstate("CALIFORNIA");
-        Assert.assertNotNull(SignUpPage.stateDropdown);
-    }
-
-    @Test(enabled = true, priority = 4)
-    public void completecity() throws Exception {
+    public void selectcity() throws Exception {
         Thread.sleep(2000);
         SignUpPage.selectcity("LOS ANGELES");
         Assert.assertNotNull(SignUpPage.cityDropdown);
     }
 
-    @Test(enabled = true, priority = 5)
+    @Test(enabled = true, priority = 4)
     public void createbutton() throws Exception {
         SignUpPage.acceptTCPP();
         SignUpPage.createbutton();

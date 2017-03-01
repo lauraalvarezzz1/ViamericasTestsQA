@@ -22,7 +22,7 @@ public class Recipients {
 	
 	// <-----------RECIPIENT------------->
 	public static By RecipientsLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
 	public static By createButton = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[1]/div/button");
 	public static By firstName = By
@@ -61,7 +61,8 @@ public class Recipients {
 	public static By accountNumber = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/form[2]/div[2]/div[5]/input");
 	public static By accountType = By.xpath(".//*[@placeholder='Account Type']");
-	public static By createbuttonwithintheform = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/div/div/button");
+	public static By createbuttonwithintheform = By
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[3]/div/div/button");
 
 	public static void GotoRecipients() throws InterruptedException {
 		Start.driver.findElement(RecipientsLabel).click();
@@ -157,14 +158,15 @@ public class Recipients {
 		Start.driver.findElement(citydropdown).sendKeys("MEDELLIN");
 		Start.driver.findElement(citydropdown).sendKeys(Keys.DOWN);
 		Start.driver.findElement(citydropdown).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 	}
 
 	public static void setChooseabank() throws InterruptedException {
+		Thread.sleep(10000);
 		Start.driver.findElement(chooseabank).sendKeys("BANCOLOMBIA");
 		Start.driver.findElement(chooseabank).sendKeys(Keys.DOWN);
 		Start.driver.findElement(chooseabank).sendKeys(Keys.ENTER);
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 	}
 
 	public static void setAccountHolderName() throws InterruptedException {
@@ -186,6 +188,6 @@ public class Recipients {
 
 	public static void createrecipient() throws InterruptedException {
 		Start.driver.findElement(createbuttonwithintheform).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	}
 }
