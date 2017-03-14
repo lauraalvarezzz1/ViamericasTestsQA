@@ -16,7 +16,7 @@ public class Send_ReviewPage {
     public static By SendmoneyButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[2]");
 
     public static void sendmoneybutton() throws Exception {
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         Start.driver.findElement(SendmoneyButton).click();
 
     }

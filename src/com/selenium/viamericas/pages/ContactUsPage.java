@@ -33,10 +33,10 @@ public class ContactUsPage {
         Thread.sleep(5000);
     }
 
-    public static void setNosoyrobot() throws Exception {
+    /*public static void setNosoyrobot() throws Exception {
         Start.driver.findElement(nosoyrobot).click();
         Thread.sleep(5000);
-    }
+    }*/
 
     public static void setSendMessageButton() throws Exception {
         Start.driver.findElement(sendMessageButton).click();

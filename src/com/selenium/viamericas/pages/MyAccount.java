@@ -20,36 +20,40 @@ public class MyAccount {
 	
 	//<-----------MY ACCOUNT SECTION------------->
 	public static By MyAccountLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
-	// Profile Settings-You can see the tests for this section in com.selenium.viamericas.subpage
+			.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
+
+	//-------------SUB PAGES - PROFILE SETTINGS PAGE----------->
 	public static By ProfileSettingsLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]/a");	
-	
-	////Recipients-You can see the tests for this section in com.selenium.viamericas.subpage
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]");
+
+	//-------------SUB PAGES - RECIPIENTS PAGE----------->
 	public static By RecipientsLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
-	
-	//Preferences
-	public static By PreferencesLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
-	public static By LanguageField = By.xpath(".//*[@id='dropdown-input']");
-	public static By SelectIdiom = By.xpath(".//*[@id='dropdown-list']");
-	public static By SaveChangesButton = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/button");
-	
-	//Accounts-You can see the tests for this section in com.selenium.viamericas.subpage
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
+
+	//-------------SUB PAGES - ACCOUNTS PAGE----------->
 	public static By AccountsLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[4]/a");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
 	
 	public MyAccount(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public static void gotoaccountlabel() throws Exception {
+	public static void goMyAccountlabel() throws Exception {
 		Start.driver.findElement(MyAccountLabel).click();
 		Thread.sleep(5000);
 	}
 
-	public static void gotocardandbankaccounts() throws Exception {
+	public static void goProfileSettings() throws Exception {
+		Start.driver.findElement(ProfileSettingsLabel).click();
+		Thread.sleep(5000);
+	}
+
+	public static void goRecipients() throws Exception {
+		Start.driver.findElement(RecipientsLabel).click();
+		Thread.sleep(5000);
+	}
+
+	public static void goAccountsFunding() throws Exception {
 		Start.driver.findElement(AccountsLabel).click();
 		Thread.sleep(5000);
 	}

@@ -15,7 +15,7 @@ public class Home {
     public void start() throws Exception {
         Start.initiate("dev");
         HomePage.Goto("login");
-        LoginPage.login("cristhian.preciado@talosdigital.com", "Test4echo");
+        LoginPage.login("laura.alvarez@talosdigital.com", "Laura123");
 
     }
 
@@ -35,7 +35,7 @@ public class Home {
         HomePage.logOut();
         Thread.sleep(2000);
         HomePage.clickSignUp();
-        Assert.assertTrue(Start.driver.getCurrentUrl().contains("account/register"));
+        Assert.assertTrue(Start.driver.getCurrentUrl().contains("account/pre-register"));
     }
     @Test(enabled = true, priority = 2)
     public void checkAboutUsPage() throws Exception {

@@ -1,5 +1,6 @@
 package com.selenium.viamericas.pages;
 
+import com.selenium.viamericas.utility.DataGenerators;
 import com.selenium.viamericas.utility.Start;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -25,6 +26,7 @@ public class Send_FundingPage {
     public static By monthdropdown = By.xpath(".//*[@placeholder='Month]");
     public static By yeardropdown = By.xpath(".//*[@placeholder='Year']");
     public static By CVVcode = By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[7]/input");
+    public static By closepopup = By.xpath("/html/body/div[3]/div[2]/button[1]");
 
     public static void selectaccount(String selectaccountoption) throws Exception {
         Thread.sleep(3000);
@@ -53,7 +55,7 @@ public class Send_FundingPage {
 
     public static void addnumber() throws Exception {
         Thread.sleep(3000);
-        Start.driver.findElement(accountnumber).sendKeys("111111111111");
+        Start.driver.findElement(accountnumber).sendKeys(DataGenerators.generateAccountnumber());
     }
 
     public static void selecttype() throws Exception {
@@ -76,7 +78,7 @@ public class Send_FundingPage {
 
     public static void addcardnumber() throws Exception {
         Thread.sleep(3000);
-        Start.driver.findElement(cardnumber).sendKeys("4716402136742264");
+        Start.driver.findElement(cardnumber).sendKeys("4716402875575");
     }
 
     public static void selectmonth() throws Exception {
@@ -101,6 +103,12 @@ public class Send_FundingPage {
     public static void continuebutton() throws Exception {
         Thread.sleep(4000);
         Start.driver.findElement(continueButton).click();
+
+    }
+
+    public static void setClosepopup() throws Exception {
+        Thread.sleep(4000);
+        Start.driver.findElement(closepopup).click();
 
     }
 }

@@ -15,7 +15,7 @@ public class GetaQuote {
     public void start() throws Exception {
         Start.initiate("dev");
         HomePage.Goto("login");
-        LoginPage.login("cristhian.preciado@talosdigital.com", "Test4echo");
+        LoginPage.login("laura.alvarez@talosdigital.com", "Laura123");
         HomePage.Goto("getaquote");
     }
 

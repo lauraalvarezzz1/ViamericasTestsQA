@@ -27,7 +27,7 @@ public class AddRecipients {
 
     @Test(enabled = true, priority = 0)
     public void gotoRecipients() throws Exception {
-        MyAccount.gotoaccountlabel();
+        MyAccount.goMyAccountlabel();
         Recipients.GotoRecipients();
         Recipients.clickOnCreate();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("recipients"));
