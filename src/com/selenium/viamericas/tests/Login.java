@@ -64,7 +64,7 @@ public class Login {
         LoginPage.typepassword("Test4echo");
         LoginPage.clicklogin();
         Thread.sleep(2000);
-        Assert.assertFalse(Start.driver.getCurrentUrl().contains("login"));
+        Assert.assertFalse(Start.driver.getCurrentUrl().contains("account/login"));
     }
 
 }
