@@ -40,8 +40,8 @@ public class ProfileSettingsPage {
 	public static By RepeatPasswordField = By.xpath(".//*[@id='newPasswordConfirm']");
 
 	//<-------------DROPDOWNS------------------>
-	public static By State = By.xpath(".//*[@placeholder='Estado']");
-	public static By City = By.xpath(".//*[@placeholder='Ciudad']");
+	public static By State = By.xpath(".//*[@placeholder='State']");
+	public static By City = By.xpath(".//*[@placeholder='City']");
 	public static By Preferences = By.xpath(".//*[@placeholder='Seleccione un idioma']");
 	public static By dropdownsgeneral = By.xpath(".//*[@id='dropdown-input']");
 
