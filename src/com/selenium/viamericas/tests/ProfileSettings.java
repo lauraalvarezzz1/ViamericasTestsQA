@@ -27,34 +27,41 @@ public class ProfileSettings {
 
     @Test(enabled = true, priority = 0)
     public void gotoMyaccount() throws Exception {
-        com.selenium.viamericas.pages.MyAccount.gotoaccountlabel();
-        Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
-    }
-
-    @Test(enabled = true, priority = 2)
-    public void ChangePassword() throws Exception {
-        ProfileSettingsPage.gotochangepassword();
-        ProfileSettingsPage.addthecurrentpassword();
-        ProfileSettingsPage.clickoncontinuebutton();
-        ProfileSettingsPage.addnewpassword();
-        ProfileSettingsPage.addrepeatpassword();
-        ProfileSettingsPage.clickoncontinuebutton();
-        ProfileSettingsPage.gotoclosepopup();
+        com.selenium.viamericas.pages.MyAccount.goMyAccountlabel();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
 
     @Test(enabled = true, priority = 1)
+    public void Cleardropdowns() throws Exception {
+        ProfileSettingsPage.cleandropdowns();
+        Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
+    }
+
+    @Test(enabled = true, priority = 2)
     public void EditProfileSettings() throws Exception {
-        //ProfileSettingsPage.cleandropdowns();
-        //ProfileSettingsPage.ProfileSettingsLabel();
         ProfileSettingsPage.changethefisrtname();
         ProfileSettingsPage.changetheLastNameField();
         ProfileSettingsPage.changetheMobilePhoneNumberField();
         ProfileSettingsPage.changetheaddressline1();
+        ProfileSettingsPage.addtheoptionalfields();
         ProfileSettingsPage.changestate();
+        ProfileSettingsPage.changeZipCode();
         ProfileSettingsPage.changecity();
+        ProfileSettingsPage.setClosepopup();
+    }
+
+    @Test(enabled = false, priority = 3)
+    public void ChangeLanguage() throws Exception {
+        ProfileSettingsPage.changepreferences("English");
+        ProfileSettingsPage.setClosepopup();
         ProfileSettingsPage.clickupdatebutton();
-        ProfileSettingsPage.gotoclosepopup();
+    }
+
+    @Test(enabled = true, priority = 4)
+    public void ChangePassword() throws Exception {
+        ProfileSettingsPage.changePasswordProcess();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("profile"));
     }
+
 }
+
