@@ -29,8 +29,8 @@ public class AddAccounts {
 
     @Test(enabled = true, priority = 0)
     public void gotoMyaccount() throws Exception {
-        MyAccount.gotoaccountlabel();
-        MyAccount.gotocardandbankaccounts();
+        MyAccount.goMyAccountlabel();
+        MyAccount.goAccountsFunding();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("accounts"));
     }
 
