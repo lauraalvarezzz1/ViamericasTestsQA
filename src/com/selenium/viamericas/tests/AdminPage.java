@@ -19,7 +19,7 @@ public class AdminPage {
     public void start() throws Exception {
         Start.initiate("dev");
         HomePage.Goto("login");
-        LoginPage.login("viamericas@gmail.com", "admin");
+        LoginPage.login("viamericas@gmail.com", "admin123");
         HomePage.Goto("adminpage");
     }
 
