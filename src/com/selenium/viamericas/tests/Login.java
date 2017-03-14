@@ -42,8 +42,8 @@ public class Login {
     @Test(enabled = true, priority = 3)
     public void verifywrongpassword() throws Exception {
         LoginPage.clearfields();
-        LoginPage.typeemail("cristhian.preciado@talosdigital.com");
-        LoginPage.typepassword("Test4echo..");
+        LoginPage.typeemail("laura.alvarez@talosdigital.com");
+        LoginPage.typepassword("Laura123123");
         LoginPage.clicklogin();
         Assert.assertNotNull(LoginPage.wrongcredentials);
     }
@@ -51,7 +51,7 @@ public class Login {
     @Test(enabled = true, priority = 4)
     public void validationpassword() throws Exception {
         LoginPage.clearfields();
-        LoginPage.typeemail("cristhian.preciado@talosdigital.com");
+        LoginPage.typeemail("laura.alvarez@talosdigital.com");
         LoginPage.typepassword("1234567");
         LoginPage.clicklogin();
         Assert.assertNotNull(LoginPage.wrongcredentials);
@@ -60,7 +60,7 @@ public class Login {
     @Test(enabled = true, priority = 5)
     public void correctlogin() throws Exception{
         LoginPage.clearfields();
-        LoginPage.typeemail("cristhian.preciado@talosdigital.com");
+        LoginPage.typeemail("laura.alvarez@talosdigital.com");
         LoginPage.typepassword("Test4echo");
         LoginPage.clicklogin();
         Thread.sleep(2000);
