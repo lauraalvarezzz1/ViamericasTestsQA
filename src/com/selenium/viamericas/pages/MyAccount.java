@@ -18,7 +18,7 @@ public class MyAccount {
 	public static By SignInButton = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[4]/button");
 
-	//<-----------MY ACCOUNT SECTION------------->
+	/*//<-----------MY ACCOUNT SECTION------------->
 	public static By MyAccountLabel =
 			By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
 
@@ -32,7 +32,22 @@ public class MyAccount {
 
 	//-------------SUB PAGES - ACCOUNTS PAGE----------->
 	public static By AccountsLabel =
-			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
+			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");*/
+	
+
+	public static By MyAccountLabel = By
+			.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
+	// Profile Settings-You can see the tests for this section in com.selenium.viamericas.subpage
+	public static By ProfileSettingsLabel = By
+			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]/a");
+
+	////Recipients-You can see the tests for this section in com.selenium.viamericas.subpage
+	public static By RecipientsLabel = By
+			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
+
+	//Accounts-You can see the tests for this section in com.selenium.viamericas.subpage
+	public static By AccountsLabel = By
+			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[4]/a");
 
 
 	public MyAccount(WebDriver driver) {
