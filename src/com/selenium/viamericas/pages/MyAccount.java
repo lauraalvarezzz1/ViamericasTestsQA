@@ -26,7 +26,7 @@ public class MyAccount {
 	public static By ProfileSettingsLabel = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]");
 
-	//-------------SUB PAGES - RECIPIENTS PAGE----------->
+	//--------------SUB PAGES - RECIPIENTS PAGE----------->
 	public static By RecipientsLabel = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
 
