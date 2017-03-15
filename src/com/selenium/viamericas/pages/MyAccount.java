@@ -27,12 +27,10 @@ public class MyAccount {
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]");
 
 	//-------------SUB PAGES - RECIPIENTS PAGE----------->
-	public static By RecipientsLabel = By
-			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
+	public static By RecipientsLabel = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
 
 	//-------------SUB PAGES - ACCOUNTS PAGE----------->
-	public static By AccountsLabel = By
-			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
+	public static By AccountsLabel = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
 
 	public MyAccount(WebDriver driver) {
 		this.driver = driver;
