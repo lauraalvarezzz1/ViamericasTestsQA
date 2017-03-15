@@ -19,16 +19,20 @@ public class MyAccount {
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[4]/button");
 
 	//<-----------MY ACCOUNT SECTION------------->
-	public static By MyAccountLabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
+	public static By MyAccountLabel =
+			By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
 
 	//-------------SUB PAGES - PROFILE SETTINGS PAGE----------->
-	public static By ProfileSettingsLabel = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]");
+	public static By ProfileSettingsLabel =
+			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]");
 
 	//-------------SUB PAGES - RECIPIENTS PAGE----------->
-	public static By RecipientsLabel = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
+	public static By RecipientsLabel =
+			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
 
 	//-------------SUB PAGES - ACCOUNTS PAGE----------->
-	public static By AccountsLabel = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
+	public static By AccountsLabel =
+			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
 
 	public MyAccount(WebDriver driver) {
 		this.driver = driver;
