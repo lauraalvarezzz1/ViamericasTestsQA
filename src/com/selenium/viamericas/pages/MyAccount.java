@@ -44,7 +44,6 @@ public class MyAccount {
 	////Recipients-You can see the tests for this section in com.selenium.viamericas.subpage
 	public static By RecipientsLabel = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[2]/a");
-
 	//Accounts-You can see the tests for this section in com.selenium.viamericas.subpage
 	public static By AccountsLabel = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[4]/a");
