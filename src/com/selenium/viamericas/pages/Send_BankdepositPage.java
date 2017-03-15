@@ -7,8 +7,8 @@ import org.openqa.selenium.Keys;
 
 public class Send_BankdepositPage {
 
-    public static By accountholdername = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[3]/input");
-    public static By accountnumber = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/input");
+    public static By accountholdername = By.xpath(".//*[@placeholder='Account Holder Name']");
+    public static By accountnumber = By.xpath(".//*[@placeholder='Account Number']");
     public static By accounttypedropdown = By.xpath(".//*[@placeholder='Account Type']");
     public static By continueButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[2]");
     public static By backButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[1]");
@@ -20,8 +20,8 @@ public class Send_BankdepositPage {
     }
 
     public static void Completeaccountnumber() throws Exception {
-        Thread.sleep(3000);
-        Start.driver.findElement(accountnumber).sendKeys("000000000000");
+        Thread.sleep(4000);
+        Start.driver.findElement(accountnumber).sendKeys("12345678");
     }
 
     public static void selectaccounttype() throws Exception {

@@ -164,8 +164,6 @@ public class Recipients {
 	public static void setChooseabank() throws InterruptedException {
 		Thread.sleep(10000);
 		Start.driver.findElement(chooseabank).sendKeys("BANCOLOMBIA");
-		Start.driver.findElement(chooseabank).sendKeys(Keys.DOWN);
-		Start.driver.findElement(chooseabank).sendKeys(Keys.ENTER);
 		Thread.sleep(6000);
 	}
 

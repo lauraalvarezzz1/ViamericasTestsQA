@@ -29,11 +29,11 @@ public class Accounts {
 	public static By VerifyAccountButton = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/button[1]");
 	public static By CreateAccountButton = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[1]/div/button");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[1]/div/button");
 	public static By CreateBankAccountButton = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[1]/div[1]/div/div");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[1]/div[1]/div/div");
 	public static By CreateCardAccountButton = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[1]/div[2]/div/div");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[1]/div[2]/div/div");
 	public static By CreateAccountWithinTheForm = By
 			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/div[4]/div[2]/button");
 
