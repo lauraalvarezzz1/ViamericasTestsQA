@@ -33,7 +33,7 @@ public class MyAccount {
 	//-------------SUB PAGES - ACCOUNTS PAGE----------->
 	public static By AccountsLabel =
 			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");*/
-	
+
 
 	public static By MyAccountLabel = By
 			.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
@@ -48,7 +48,6 @@ public class MyAccount {
 	//Accounts-You can see the tests for this section in com.selenium.viamericas.subpage
 	public static By AccountsLabel = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[4]/a");
-
 
 	public MyAccount(WebDriver driver) {
 		this.driver = driver;
