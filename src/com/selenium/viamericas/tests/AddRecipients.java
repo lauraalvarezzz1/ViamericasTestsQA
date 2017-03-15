@@ -2,7 +2,7 @@ package com.selenium.viamericas.tests;
 
 import com.selenium.viamericas.pages.HomePage;
 import com.selenium.viamericas.pages.LoginPage;
-import com.selenium.viamericas.pages.MyAccount;
+import com.selenium.viamericas.pages.MyAccounts;
 import com.selenium.viamericas.subpages.Recipients;
 import com.selenium.viamericas.utility.Start;
 import org.testng.Assert;
@@ -27,7 +27,7 @@ public class AddRecipients {
 
     @Test(enabled = true, priority = 0)
     public void gotoRecipients() throws Exception {
-        MyAccount.goMyAccountlabel();
+        MyAccounts.goMyAccountlabel();
         Recipients.GotoRecipients();
         Recipients.clickOnCreate();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("recipients"));

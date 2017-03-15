@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MyAccount {
+public class MyAccounts {
 
 	WebDriver driver;
 
@@ -35,7 +35,7 @@ public class MyAccount {
 			By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[3]/a");
 
 
-	public MyAccount(WebDriver driver) {
+	public MyAccounts(WebDriver driver) {
 		this.driver = driver;
 	}
 
