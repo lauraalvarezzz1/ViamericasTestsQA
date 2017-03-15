@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69c517e-cd94-4aa5-8bd7-9af7faec2175" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/ContactUsPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/ContactUsPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/MyAccount.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/MyAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/Send_BankdepositPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/Send_BankdepositPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/Send_FundingPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/Send_FundingPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/Send_ReviewPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/pages/Send_ReviewPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/subpages/Accounts.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/subpages/Accounts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/subpages/ProfileSettingsPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/subpages/ProfileSettingsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/subpages/Recipients.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/subpages/Recipients.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/AddAccounts.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/AddAccounts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/AddRecipients.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/AddRecipients.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/AdminPage.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/AdminPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/FooterTests.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/FooterTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/GetaQuote.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/GetaQuote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/Home.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/Home.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/Login.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/ProfileSettings.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/ProfileSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/SendMoneyFlow.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/SendMoneyFlow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/SignUp.java" afterPath="$PROJECT_DIR$/src/com/selenium/viamericas/tests/SignUp.java" />
     </list>
     <ignored path="ViamericasTestsQA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +57,8 @@
       <file leaf-file-name="MyAccount.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/MyAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="225">
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -852,7 +834,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13044000" />
+    <option name="totallyTimeSpent" value="13047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1284,8 +1266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/selenium/viamericas/pages/MyAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        <state relative-caret-position="225">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>
