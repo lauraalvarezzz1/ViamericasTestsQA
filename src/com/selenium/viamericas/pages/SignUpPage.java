@@ -1,5 +1,7 @@
 package com.selenium.viamericas.pages;
 
+import com.selenium.viamericas.tests.UnionTestsSignUp;
+import com.selenium.viamericas.utility.Language;
 import org.openqa.selenium.By;
 import com.selenium.viamericas.utility.Start;
 import org.openqa.selenium.Keys;
@@ -7,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 public class SignUpPage {
     WebDriver driver;
-
+    public static Language language = new Language();
 
     //<---------OBLIGATORY--------->
     public static By emailaddress = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[1]/input");
@@ -20,15 +22,17 @@ public class SignUpPage {
     public static By lastname = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[1]/div[2]/input");
     public static By mobilephonenumber = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[2]/div/input");
     public static By addressline1 = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[1]/input");
-    public static By country = By.xpath(".//*[@placeholder='Country']");
+    public static By country = By.xpath(".//*[@placeholder='"+ language.getCountry()+"']");
     public static By stateDropdown = By.xpath(".//*[@placeholder='State']");
     public static By zipcode = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[3]/div/div[1]/input");
-    public static By cityDropdown = By.xpath(".//*[@placeholder='City']");
+    public static By cityDropdown = By.xpath(".//*[@placeholder='"+ language.getCity()+"']");
     public static By acceptTCPP = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[7]/div[1]/ins");
     public static By createaccountbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[9]/div/div[2]/button");
-    public static By month = By.xpath(".//*[@placeholder='Month']");
-    public static By day = By.xpath(".//*[@placeholder='Day']");
-    public static By year = By.xpath(".//*[@placeholder='Year']");
+    public static By month = By.xpath(".//*[@placeholder='"+ language.getMonth()+"']");
+    public static By day = By.xpath(".//*[@placeholder='"+ language.getDay()+"']");
+    public static By year = By.xpath(".//*[@placeholder='"+ language.getYear()+"']");
+
+
 
 
     //<----------OPTIONAL----------->
@@ -146,6 +150,8 @@ public class SignUpPage {
         Start.driver.findElement(year).clear();
         Start.driver.findElement(year).sendKeys(yeardropdown);
     }
+
+
 
     //<----------------Optional----------------->
 
