@@ -17,7 +17,7 @@ public class Send_ReviewPage {
 
     public static void sendmoneybutton() throws Exception {
         Thread.sleep(5000);
-         Start.driver.findElement(SendmoneyButton).click();
+        Start.driver.findElement(SendmoneyButton).click();
 
     }
 }
