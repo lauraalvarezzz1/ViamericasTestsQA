@@ -33,7 +33,7 @@ public class FooterTests {
         ContactUsPage.setyourname();
         ContactUsPage.setYouremailaddress();
         ContactUsPage.setMessage();
-        ContactUsPage.setNosoyrobot();
+       // ContactUsPage.setNosoyrobot();
         ContactUsPage.setSendMessageButton();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("contact-us"));
     }

@@ -8,20 +8,6 @@ import org.openqa.selenium.WebDriver;
 
 public class ProfileSettingsPage {
 
-	// It's optional because here is created the page: ProfileSettings
-	public static By LoginLabel = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/a");
-	public static By UsernameInput = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[1]/input");
-	public static By PasswordInput = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[2]/input");
-	public static By SignInButton = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div[4]/button");
-	public static By MyAccountLabel = 
-			By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[4]/a");
-	
-	// <-----------PROFILE SETTINGS SECTION------------->
-	public static By ProfileSettingsLabel = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[1]/ul/li[1]/a");	
 	
 	//<------------FORM------------>
 	public static By FirstNameField = By
@@ -35,41 +21,32 @@ public class ProfileSettingsPage {
 	public static By MobilePhoneNumberField = By
 			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[5]/input");
 	public static By AdressLine1Field = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[9]/input");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[10]/input");
 	public static By AdressLine2Field = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[10]/input"); //OPTIONAL
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[11]/input"); //OPTIONAL
 	public static By ZipCode = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[12]/div/div[2]/input");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[13]/div/div[2]/input");
 	
-	//Buttons
+	//<-----------------BUTTONS--------------->
 	public static By UpdateButton = By
-			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[14]/button[1]");
-	
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[17]/button[1]");
 	public static By ChangePasswordButton = By
-			.xpath("html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[14]/button[2]");
+			.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div/div/form/div[17]/button[2]");
 	
-	//Change Password
-	public static By CurrentPasswordField = By
-			.xpath(".//*[@id='currentPassword']");
-	public static By ContinueButton = By
-			.xpath("html/body/div[3]/div[2]/button[1]");
-	public static By NewPasswordField = By
-			.xpath(".//*[@id='newPassword']");
-	public static By RepeatPasswordField = By
-			.xpath(".//*[@id='newPasswordConfirm']");
+	//<---------------CHANGE PASSWORD--------------->
+	public static By CurrentPasswordField = By.xpath(".//*[@id='currentPassword']");
+	public static By ContinueButton = By.xpath("html/body/div[3]/div[2]/button[1]");
+	public static By NewPasswordField = By.xpath(".//*[@id='newPassword']");
+	public static By RepeatPasswordField = By.xpath(".//*[@id='newPasswordConfirm']");
 
+	//<-------------DROPDOWNS------------------>
 	public static By State = By.xpath(".//*[@placeholder='State']");
 	public static By City = By.xpath(".//*[@placeholder='City']");
+	public static By Preferences = By.xpath(".//*[@placeholder='Seleccione un idioma']");
+	public static By dropdownsgeneral = By.xpath(".//*[@id='dropdown-input']");
 
 	public static By closepopup = By.xpath("/html/body/div[3]/div[2]/span");
-	public static By dropdownsgeneral = By.xpath(".//*[@id='dropdown-input']");
-	
 
-
-	public static void GotoProfileSettings() throws InterruptedException {
-		Start.driver.findElement(ProfileSettingsLabel).click();
-		Thread.sleep(1000);
-	}
 
 	public static void changethefisrtname() throws InterruptedException {
 		Start.driver.findElement(FirstNameField).clear();
@@ -77,15 +54,9 @@ public class ProfileSettingsPage {
 		Thread.sleep(1000);
 	}
 
-	public static void changethemiddlename() throws InterruptedException {
-		Start.driver.findElement(MiddleNameField).clear();
-		Start.driver.findElement(MiddleNameField).sendKeys("Maria");
-		Thread.sleep(2000);
-	}
-
 	public static void changetheLastNameField() throws InterruptedException {
 		Start.driver.findElement(LastNameField).clear();
-		Start.driver.findElement(LastNameField).sendKeys("Galviz");
+		Start.driver.findElement(LastNameField).sendKeys("Alvarez");
 		Thread.sleep(1000);
 	}
 
@@ -99,6 +70,22 @@ public class ProfileSettingsPage {
 		Start.driver.findElement(AdressLine1Field).clear();
 		Start.driver.findElement(AdressLine1Field).sendKeys("Carrera 65 # 45 - 56");
 		Thread.sleep(1000);
+	}
+
+	public static void changeZipCode() throws InterruptedException {
+		Start.driver.findElement(ZipCode).clear();
+		Start.driver.findElement(ZipCode).sendKeys("90001");
+		Thread.sleep(1000);
+	}
+
+	public static void addtheoptionalfields() throws InterruptedException {
+		Start.driver.findElement(MiddleNameField).clear();
+		Start.driver.findElement(SecondLastNameField).clear();
+		Start.driver.findElement(AdressLine2Field).clear();
+		Start.driver.findElement(MiddleNameField).sendKeys("Cristina");
+		Start.driver.findElement(SecondLastNameField).sendKeys("Galviz");
+		Start.driver.findElement(AdressLine2Field).sendKeys("Carrera 40#34-55");
+		Thread.sleep(2000);
 	}
 
 	public static void changestate() throws InterruptedException {
@@ -123,38 +110,30 @@ public class ProfileSettingsPage {
 		Thread.sleep(4000);
 	}
 
-	public static void gotochangepassword() throws InterruptedException {
+	public static void changePasswordProcess() throws InterruptedException {
 		Start.driver.findElement(ChangePasswordButton).click();
-		Thread.sleep(3000);
-	}
-
-	public static void addthecurrentpassword() throws InterruptedException {
+		Thread.sleep(5000);
 		Start.driver.findElement(CurrentPasswordField).sendKeys("Laura123");
-		Thread.sleep(2000);
-	}
-
-	public static void clickoncontinuebutton() throws InterruptedException {
 		Start.driver.findElement(ContinueButton).click();
-		Thread.sleep(2000);
-	}
-
-	public static void addnewpassword() throws InterruptedException {
 		Start.driver.findElement(NewPasswordField).sendKeys("Laura123");
-		Thread.sleep(2000);
-	}
-
-	public static void addrepeatpassword() throws InterruptedException {
 		Start.driver.findElement(RepeatPasswordField).sendKeys("Laura123");
 		Thread.sleep(2000);
 	}
 
-	public static void gotoclosepopup() throws InterruptedException {
+	public static void setClosepopup() throws InterruptedException {
 		Start.driver.findElement(closepopup).click();
 		Thread.sleep(2000);
 	}
-
 	public static void cleandropdowns() throws InterruptedException {
 		Start.driver.findElement(dropdownsgeneral).clear();
 		Thread.sleep(2000);
+	}
+
+	public static void changepreferences(String type) throws InterruptedException{
+			Start.driver.findElement(Preferences).clear();
+			Start.driver.findElement(Preferences).click();
+			Start.driver.findElement(City).sendKeys(Keys.DOWN);
+			Start.driver.findElement(City).sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
 	}
 }

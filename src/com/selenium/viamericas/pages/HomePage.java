@@ -26,6 +26,7 @@ public class HomePage {
     //Buttons
     public static By getaQuoteButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/section[2]/div/div[2]/a[1]");
     public static By SignUpButton = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/button[1]");
+    public static By SendMoneybutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div[1]/section[4]/div[3]/div[1]");
 
     //Home Page Links
     public static By logoIcon = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/logo-viamericas/div/a/img");
@@ -125,6 +126,11 @@ public class HomePage {
     public static void clickSignUp() throws Exception {
         Start.driver.findElement(SignUpButton).click();
         Thread.sleep(3000);
+    }
+
+    public static void clickSendMoney() throws Exception {
+        Start.driver.findElement(SendMoneybutton).click();
+        Thread.sleep(2000);
     }
 
     public static void logOut(){

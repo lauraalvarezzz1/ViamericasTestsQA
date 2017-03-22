@@ -13,13 +13,13 @@ public class SendMoneyFlow {
         public void start() throws Exception {
             Start.initiate("test");
             HomePage.Goto("login");
-            LoginPage.login("cristhian.preciado@talosdigital.com", "Test4echo");
+            LoginPage.login("laura.alvarez@talosdigital.com", "Laura123");
             HomePage.Goto("sendmoney");
         }
 
         @AfterClass
         public void finish() {
-            Start.driver.quit();
+            //Start.driver.quit();
         }
 
         @Test (enabled = true, priority = 0)
@@ -81,11 +81,12 @@ public class SendMoneyFlow {
             Send_FundingPage.selectyear();
             Send_FundingPage.addcvvcode();
             Send_FundingPage.continuebutton();
-            //Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
+            Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
     }
 
        @Test (enabled = true, priority = 4)
        public void ReviewPage() throws Exception {
+            Send_FundingPage.setClosepopup();
             Send_ReviewPage.sendmoneybutton();
             //Assert.assertTrue(Start.driver.getCurrentUrl().contains("confirmation"));
     }

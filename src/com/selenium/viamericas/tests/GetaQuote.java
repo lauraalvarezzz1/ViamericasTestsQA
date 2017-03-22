@@ -13,7 +13,10 @@ public class GetaQuote {
 
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("test");
+
+        Start.initiate("dev");
+        HomePage.Goto("login");
+        LoginPage.login("laura.alvarez@talosdigital.com", "Laura123");
         HomePage.Goto("getaquote");
 
     }
