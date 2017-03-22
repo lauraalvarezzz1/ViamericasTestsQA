@@ -11,7 +11,7 @@ public class SendMoneyFlowAsaGuest {
 
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("dev");
+        Start.initiate("test");
         HomePage.Goto("sendmoney");
     }
 
