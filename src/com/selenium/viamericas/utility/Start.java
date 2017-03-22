@@ -9,7 +9,7 @@ public class Start {
 
     public static WebDriver driver;
 
-    public static String baseurl = "https://test.govianex.com/#/";
+    public static String baseurl = "https://dev.govianex.com/#/";
 
     public static void initiate(String Server) {
 
