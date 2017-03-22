@@ -9,6 +9,7 @@ public class Language {
         select();
     }
 
+    private String money;
     private String logIn;
     private String country;
     private String state;
@@ -57,10 +58,15 @@ public class Language {
         return year;
     }
 
+    public String getMoney() {
+        return money;
+    }
+
     private void Spanish (){
         this.country = "País";
         this.city = "Ciudad";
         this.day  = "día";
+        this.money = "¿A dónde envía dinero? (opcional)";
     }
 
     private void English(){
@@ -69,6 +75,7 @@ public class Language {
         this.day = "Day";
         this.month = "Month";
         this.year = "Year";
+        this.money= "Where do you send money? (optional)";
 
     }
 
