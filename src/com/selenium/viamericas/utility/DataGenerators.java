@@ -11,5 +11,12 @@ public class DataGenerators {
         String num = "123"+Integer.toString(pick);
         return num;
     }
+
+    public static String generateemails (){
+        Random rand = new Random();
+        int cons = rand.nextInt(900)+1;
+        String num = "123"+Integer.toString(cons);
+        return num;
+    }
 }
 

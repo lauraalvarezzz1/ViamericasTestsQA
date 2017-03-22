@@ -26,7 +26,8 @@ public class SendMoneyFlowAsaGuest {
         Send_DestinationPage.howMoneyRecieved("BankDeposit");
         Send_DestinationPage.chooseBank();
         Assert.assertNotNull(Send_DestinationPage.exchangerate);
-        Send_DestinationPage.selectamounttoSend();
+        Send_DestinationPage.oklahomaState();
+        Send_DestinationPage.selectamounttoSendGuest();
         Send_DestinationPage.goandcontinue();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("recipient"));
     }
@@ -52,8 +53,8 @@ public class SendMoneyFlowAsaGuest {
         Send_BankdepositPage.Completeaccountname();
         Send_BankdepositPage.Completeaccountnumber();
         Send_BankdepositPage.selectaccounttype();
-        Send_BankdepositPage.goandcontinue();
-        Assert.assertTrue(Start.driver.getCurrentUrl().contains("funding"));
+        //Send_BankdepositPage.goandcontinue();
+        Assert.assertTrue(Start.driver.getCurrentUrl().contains("fast-send/funding"));
     }
 
     @Test (enabled = true, priority = 3)
@@ -65,7 +66,7 @@ public class SendMoneyFlowAsaGuest {
         Send_FundingPage.addroutingnumber();
         Send_FundingPage.addnumber();
         Send_FundingPage.selecttype();
-        Send_FundingPage.continuebutton();
+        //Send_FundingPage.continuebutton();
         //Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
     }
 
@@ -78,14 +79,12 @@ public class SendMoneyFlowAsaGuest {
         Send_FundingPage.selectmonth();
         Send_FundingPage.selectyear();
         Send_FundingPage.addcvvcode();
-        Send_FundingPage.continuebutton();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("review"));
     }
 
     @Test (enabled = true, priority = 4)
     public void ReviewPage() throws Exception {
-        Send_FundingPage.setClosepopup();
         Send_ReviewPage.sendmoneybutton();
-        //Assert.assertTrue(Start.driver.getCurrentUrl().contains("confirmation"));
+        //Assert.assertTrue(Start.driver.getCurrentUrl().contains("account/pre-register"));
     }
 }

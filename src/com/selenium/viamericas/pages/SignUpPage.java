@@ -1,5 +1,6 @@
 package com.selenium.viamericas.pages;
 
+import com.selenium.viamericas.utility.DataGenerators;
 import org.openqa.selenium.By;
 import com.selenium.viamericas.utility.Start;
 import org.openqa.selenium.Keys;
@@ -54,7 +55,7 @@ public class SignUpPage {
 
     public static void addemailaddress(String email) throws Exception {
         Thread.sleep(1500);
-        Start.driver.findElement(emailaddress).clear();
+        Start.driver.findElement(emailaddress).sendKeys(DataGenerators.generateemails());
         Start.driver.findElement(emailaddress).sendKeys(email);
     }
 
