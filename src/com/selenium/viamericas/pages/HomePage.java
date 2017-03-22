@@ -12,8 +12,8 @@ public class HomePage {
     public static By getaquotelabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/nav-viamericas/nav/div[1]/ul[1]/li[3]/a");
     public static By howitworkslabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/nav-viamericas/nav/div[1]/ul[1]/li[4]/a");
     public static By locationlabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/nav-viamericas/nav/div[1]/ul[1]/li[5]/a");
-    public static By loginbutton = By.xpath("html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/button[2]");
-    public static By signuplabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/div/button[1]");
+    public static By loginbutton = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/button[2]");
+    public static By signuplabel = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[3]/button[1]");
 
     //Header menu elements
     public static By languagedropdown = By.xpath("/html/body/div[2]/div/div[1]/div[1]/header/div/ul/li[1]/a");
@@ -54,6 +54,7 @@ public class HomePage {
 
         }else if(page.equals("getaquote")) {
             Start.driver.findElement(getaquotelabel).click();
+            Thread.sleep(3000);
 
         }else if(page.equals("howitworks")) {
             Start.driver.findElement(howitworkslabel).click();
@@ -74,37 +75,37 @@ public class HomePage {
     public static void footerGoto(String pag) throws Exception {
         if(pag.equalsIgnoreCase("aboutus")){
             Start.driver.findElement(aboutus).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("leadership")){
             Start.driver.findElement(leadership).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("careers")){
             Start.driver.findElement(careers).click();
             Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("news")){
             Start.driver.findElement(news).click();
-           Thread.sleep(1500);
+           Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("payernetwork")){
             Start.driver.findElement(payernetwork).click();
-            Thread.sleep(1500);
+            Thread.sleep(3000);
         }else if(pag.equalsIgnoreCase("compliance")){
             Start.driver.findElement(compliance).click();
-            Thread.sleep(1500);
+            Thread.sleep(3000);
         }else if(pag.equalsIgnoreCase("fileacompliance")){
             Start.driver.findElement(fileaCompliance).click();
-            Thread.sleep(1500);
+            Thread.sleep(3000);
         }else if(pag.equalsIgnoreCase("faq")){
             Start.driver.findElement(FAQ).click();
-            Thread.sleep(1500);
+            Thread.sleep(3000);
         }else if(pag.equalsIgnoreCase("contactus")){
             Start.driver.findElement(contactUs).click();
-            Thread.sleep(1500);
+            Thread.sleep(3000);
         }else if(pag.equalsIgnoreCase("privacypolicy")){
             Start.driver.findElement(privacyPolicy).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }else if(pag.equalsIgnoreCase("termsandconditions")){
             Start.driver.findElement(termsandConditions).click();
-            Thread.sleep(1500);
+            Thread.sleep(2000);
         }
     }
 
@@ -124,7 +125,7 @@ public class HomePage {
 
     public static void clickSignUp() throws Exception {
         Start.driver.findElement(SignUpButton).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     public static void clickSendMoney() throws Exception {

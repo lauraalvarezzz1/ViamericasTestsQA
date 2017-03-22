@@ -13,6 +13,7 @@ public class Home {
 
     @BeforeClass
     public void start() throws Exception {
+
         Start.initiate("dev");
         HomePage.Goto("login");
         LoginPage.login("laura.alvarez@talosdigital.com", "Laura123");
@@ -31,30 +32,27 @@ public class Home {
     }
 
     @Test(enabled = true, priority = 1)
-    public void checkgotoSignUpwithouLogin() throws Exception {
-        HomePage.logOut();
-        Thread.sleep(2000);
+    public void checkgotoSignUpwithoutLogin() throws Exception {
+        Thread.sleep(4000);
         HomePage.clickSignUp();
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("account/pre-register"));
     }
     @Test(enabled = true, priority = 2)
     public void checkAboutUsPage() throws Exception {
         Start.driver.get(Start.baseurl);
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         HomePage.footerGoto("aboutus");
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("about-us"));
     }
 
     @Test(enabled = true, priority = 3)
     public void checkLeadershipPage() throws Exception {
-        //HomePage.Goto("main");
         HomePage.footerGoto("leadership");
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("management"));
     }
 
     @Test(enabled = true, priority = 4)
     public void checkCarrersPage() throws Exception {
-        //HomePage.Goto("main");
         HomePage.footerGoto("careers");
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("careers"));
     }
@@ -73,14 +71,14 @@ public class Home {
     }
 
     @Test(enabled = true, priority = 7)
-    public void checkCompliance() throws Exception{
-        HomePage.footerGoto("compliance");
-        Assert.assertTrue(Start.driver.getCurrentUrl().contains("compliance"));
+    public void checkFileCompliance() throws Exception{
+        HomePage.footerGoto("file-complaint");
+        Assert.assertTrue(Start.driver.getCurrentUrl().contains("file-complaint"));
     }
 
     @Test(enabled = true, priority = 8)
-    public void checkFileCompliance() throws Exception{
-        HomePage.footerGoto("file-complaint");
+    public void checkCompliance() throws Exception{
+        HomePage.footerGoto("compliance");
         Assert.assertTrue(Start.driver.getCurrentUrl().contains("compliance"));
     }
 
