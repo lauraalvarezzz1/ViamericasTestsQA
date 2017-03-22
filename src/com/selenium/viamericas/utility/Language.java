@@ -18,11 +18,16 @@ public class Language {
     private String year;
 
     public void select(){
-        if (Start.driver.findElement(By.linkText("Acerca de Nosotros")).isDisplayed()){
+        try {
+            if (Start.driver.findElement(By.linkText("About Us")).isDisplayed()){
+               English();
+            }
+        }catch (Exception e)
+        {
             Spanish();
         }
-        else English();
-        System.out.printf(country);
+
+;
     }
     public String getLogIn() {
         return logIn;
