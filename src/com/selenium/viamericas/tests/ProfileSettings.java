@@ -15,7 +15,7 @@ public class ProfileSettings {
 
     @BeforeClass
     public void start() throws Exception {
-        Start.initiate("dev");
+        Start.initiate("test");
         HomePage.Goto("login");
         LoginPage.login("laura.alvarez@talosdigital.com", "Laura123");
         HomePage.Goto("myaccount");
@@ -40,12 +40,20 @@ public class ProfileSettings {
 
     @Test(enabled = true, priority = 2)
     public void EditProfileSettings() throws Exception {
+
+        ProfileSettingsPage.cleandropdowns();
+
         ProfileSettingsPage.changethefisrtname();
         ProfileSettingsPage.changetheLastNameField();
         ProfileSettingsPage.changetheMobilePhoneNumberField();
         ProfileSettingsPage.changetheaddressline1();
         ProfileSettingsPage.addtheoptionalfields();
         ProfileSettingsPage.changestate();
+
+        ProfileSettingsPage.gotoclosepopup();
+        ProfileSettingsPage.changecity();
+        ProfileSettingsPage.gotoclosepopup();
+
         ProfileSettingsPage.changeZipCode();
         ProfileSettingsPage.changecity();
         ProfileSettingsPage.setClosepopup();

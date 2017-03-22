@@ -14,7 +14,7 @@ public class Start {
     public static void initiate(String Server) {
 
 
-        if (Server.equals("dev")) {
+        if (Server.equals("test")) {
 
             System.setProperty("webdriver.chrome.driver", "src/chromedriver");
             driver = new ChromeDriver();
@@ -22,7 +22,7 @@ public class Start {
             driver.navigate().to(baseurl);
             driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
-        } else if (Server.equals("test")) {
+        } else if (Server.equals("else")) {
 
             driver = new FirefoxDriver();
             driver.manage().window().maximize();

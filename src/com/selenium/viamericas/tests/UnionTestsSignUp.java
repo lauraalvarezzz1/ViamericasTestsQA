@@ -1,17 +1,20 @@
 package com.selenium.viamericas.tests;
 
+import com.selenium.viamericas.pages.LoginPage;
 import com.selenium.viamericas.pages.SignUpPage;
+import com.selenium.viamericas.utility.DataGenerators;
+import com.selenium.viamericas.utility.Start;
+import com.selenium.viamericas.utility.Language;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.selenium.viamericas.utility.Start;
-import org.openqa.selenium.WebDriver;
 
 
-public class SignUp {
+public class UnionTestsSignUp {
 
-
+    public Language language;
 
     @BeforeClass
     public void start() throws Exception {
@@ -30,13 +33,17 @@ public class SignUp {
 
     @Test(enabled = true, priority = 1)
     public void gotothefirstform() throws Exception {
-        SignUpPage.addemailaddress("test+1@test.com");
+        SignUpPage.addemailaddress("test@test.com");
         SignUpPage.addpassword("test4echo");
         SignUpPage.clickonsignupbutton();
     }
 
-    @Test(enabled = true, priority = 2)
+    @Test(enabled = true, priority = 2, invocationCount = 1)
     public void completestringfields() throws Exception {
+        if (LoginPage.isLoggedIn() == false){
+            gotosignup();
+            gotothefirstform();
+        }
         SignUpPage.addfirstname("LAURA");
         SignUpPage.addlastname("ALVAREZ");
         SignUpPage.addmobilephonenumber("3117224425");

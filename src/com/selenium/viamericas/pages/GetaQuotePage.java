@@ -2,6 +2,7 @@ package com.selenium.viamericas.pages;
 
 import org.openqa.selenium.By;
 import com.selenium.viamericas.utility.Start;
+import org.openqa.selenium.Keys;
 
 
 public class GetaQuotePage {
@@ -9,9 +10,9 @@ public class GetaQuotePage {
 
 
     public static By title = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/h1");
-    public static By countrydropdown = By.xpath("//*[@id=\"dropdown-input\"]");
+    public static By countrydropdown = By.xpath(".//*[@placeholder='Country']");
     public static By amountfield = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[1]/div[2]/div[1]/div/input");
-    public static By bankdepositbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[1]/div[3]/div[1]/div[1]/div");
+    public static By bankdepositbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[1]/div[3]/div[1]/div/div");
     public static By cashpickupbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[1]/div[3]/div[1]/div[2]/div");
     public static By getaquoteButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[4]/button");
     public static By bestexhangeratetitle = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/div/h4");
@@ -23,14 +24,15 @@ public class GetaQuotePage {
         return Title;
     }
 
-    public static void selectcountry(String count){
+    public static void selectcountry(String count) throws Exception{
         Start.driver.findElement(countrydropdown).clear();
         Start.driver.findElement(countrydropdown).sendKeys(count);
     }
 
     public static void enteramount(String amount) throws Exception {
-        Thread.sleep(1500);
+        Start.driver.findElement(amountfield).click();
         Start.driver.findElement(amountfield).clear();
+        Thread.sleep(5000);
         Start.driver.findElement(amountfield).sendKeys(amount);
     }
 
@@ -44,7 +46,7 @@ public class GetaQuotePage {
 
     public static void getaquote() throws Exception {
         Start.driver.findElement(getaquoteButton).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
 
