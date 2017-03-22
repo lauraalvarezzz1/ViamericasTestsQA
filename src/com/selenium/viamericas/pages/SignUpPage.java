@@ -60,7 +60,6 @@ public class SignUpPage {
 
     public static void addemailaddress(String email) throws Exception {
         Thread.sleep(1500);
-        Start.driver.findElement(emailaddress).sendKeys(DataGenerators.generateemails());
         Start.driver.findElement(emailaddress).sendKeys(email);
     }
 
@@ -136,7 +135,7 @@ public class SignUpPage {
     }
 
     public static void acceptTCPP() throws Exception {
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         Start.driver.findElement(acceptTCPP).click();
 
     }
