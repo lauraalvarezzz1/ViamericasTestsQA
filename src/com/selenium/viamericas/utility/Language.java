@@ -16,13 +16,19 @@ public class Language {
     private String day;
     private String month;
     private String year;
+    private String money;
 
     public void select(){
-        if (Start.driver.findElement(By.linkText("Acerca de Nosotros")).isDisplayed()){
+        try {
+            if (Start.driver.findElement(By.linkText("About Us")).isDisplayed()){
+               English();
+            }
+        }catch (Exception e)
+        {
             Spanish();
         }
-        else English();
-        System.out.printf(country);
+
+;
     }
     public String getLogIn() {
         return logIn;
@@ -52,10 +58,15 @@ public class Language {
         return year;
     }
 
+    public String getMoney() {
+        return money;
+    }
+
     private void Spanish (){
         this.country = "País";
         this.city = "Ciudad";
         this.day  = "día";
+        this.money  = "¿A dónde envía dinero? (opcional)";
     }
 
     private void English(){
@@ -64,6 +75,7 @@ public class Language {
         this.day = "Day";
         this.month = "Month";
         this.year = "Year";
+        this.money = "Where do you send money? (optional)";
 
     }
 
