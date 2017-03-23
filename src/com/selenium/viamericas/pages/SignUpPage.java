@@ -26,12 +26,11 @@ public class SignUpPage {
     public static By stateDropdown = By.xpath(".//*[@placeholder='State']");
     public static By zipcode = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[3]/div/div[1]/input");
     public static By cityDropdown = By.xpath(".//*[@placeholder='"+ language.getCity()+"']");
-    public static By acceptTCPP = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[7]/div[1]/ins");
-    public static By createaccountbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[9]/div/div[2]/button");
+    public static By acceptTCPP = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[8]/div[1]/ins");
+    public static By createaccountbutton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div[2]/div/form/div/div[4]/div[10]/div/div[2]/button");
     public static By month = By.xpath(".//*[@placeholder='"+ language.getMonth()+"']");
     public static By day = By.xpath(".//*[@placeholder='"+ language.getDay()+"']");
     public static By year = By.xpath(".//*[@placeholder='"+ language.getYear()+"']");
-
 
 
 
@@ -44,6 +43,8 @@ public class SignUpPage {
 
 
     public static By selectoption = By.xpath(".//*[@id='dropdown-list']");
+    public static By setclosepupo= By.xpath("/html/body/div[3]/div[2]/button[1]");
+    public static By wheredoyousendmoney = By.xpath(".//*[@placeholder='"+ language.getMoney()+"']");
     //*[@id="dropdown-list"]
 
 
@@ -126,14 +127,22 @@ public class SignUpPage {
         Start.driver.findElement(cityDropdown).sendKeys(Keys.ENTER);
     }
 
-    public static void acceptTCPP() throws Exception {
-        Start.driver.findElement(acceptTCPP).click();
+    public static void setWheredoyousendmoney(String money) throws Exception {
+        Start.driver.findElement(wheredoyousendmoney).sendKeys(money);
+        Start.driver.findElement(wheredoyousendmoney).sendKeys(Keys.DOWN);
+        Start.driver.findElement(wheredoyousendmoney).sendKeys(Keys.ENTER);
         Thread.sleep(2000);
+    }
+
+    public static void acceptTCPP() throws Exception {
+        Thread.sleep(5000);
+        Start.driver.findElement(acceptTCPP).click();
+
     }
 
     public static void createbutton() throws Exception {
         Start.driver.findElement(createaccountbutton).click();
-        Thread.sleep(2000);
+        Thread.sleep(6000);
     }
 
     public static void addmonth(String monthdropdown) throws Exception {
@@ -181,6 +190,13 @@ public class SignUpPage {
     public void selectanyoption() throws InterruptedException {
         Thread.sleep(5000);
         driver.findElement(selectoption).click();
+
+    }
+
+    public static void setclosepupo() throws InterruptedException {
+        Thread.sleep(5000);
+        Start.driver.findElement(setclosepupo).click();
+
 
     }
 }
