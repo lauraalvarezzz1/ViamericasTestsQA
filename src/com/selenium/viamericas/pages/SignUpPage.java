@@ -1,5 +1,6 @@
 package com.selenium.viamericas.pages;
 
+import com.selenium.viamericas.utility.DataGenerators;
 import com.selenium.viamericas.tests.UnionTestsSignUp;
 import com.selenium.viamericas.utility.Language;
 import org.openqa.selenium.By;
@@ -59,7 +60,6 @@ public class SignUpPage {
 
     public static void addemailaddress(String email) throws Exception {
         Thread.sleep(1500);
-        Start.driver.findElement(emailaddress).clear();
         Start.driver.findElement(emailaddress).sendKeys(email);
     }
 
@@ -135,7 +135,7 @@ public class SignUpPage {
     }
 
     public static void acceptTCPP() throws Exception {
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         Start.driver.findElement(acceptTCPP).click();
 
     }

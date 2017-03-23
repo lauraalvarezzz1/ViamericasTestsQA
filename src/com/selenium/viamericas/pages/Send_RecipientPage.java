@@ -1,5 +1,6 @@
 package com.selenium.viamericas.pages;
 
+import com.selenium.viamericas.utility.DataGenerators;
 import com.selenium.viamericas.utility.Start;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -66,7 +67,7 @@ public class Send_RecipientPage {
     }
 
     public static void emailaddress() throws Exception {
-        Start.driver.findElement(emailaddress).sendKeys("laura.alvarez@talosdigital.com");
+        Start.driver.findElement(emailaddress).sendKeys("laura.alvarez+"+ DataGenerators.generateemails()+"@talosdigital.com");
         Thread.sleep(2000);
     }
 
