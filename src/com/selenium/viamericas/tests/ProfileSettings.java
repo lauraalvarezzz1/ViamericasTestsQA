@@ -50,9 +50,9 @@ public class ProfileSettings {
         ProfileSettingsPage.addtheoptionalfields();
         ProfileSettingsPage.changestate();
 
-        ProfileSettingsPage.gotoclosepopup();
+        //ProfileSettingsPage.gotoclosepopup();
         ProfileSettingsPage.changecity();
-        ProfileSettingsPage.gotoclosepopup();
+        //ProfileSettingsPage.gotoclosepopup();
 
         ProfileSettingsPage.changeZipCode();
         ProfileSettingsPage.changecity();
