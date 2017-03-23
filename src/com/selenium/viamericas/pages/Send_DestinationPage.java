@@ -17,7 +17,12 @@ public class Send_DestinationPage {
     public static By continueButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[2]");
     public static By backButton = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[2]/button[1]");
     public static By exchangerate = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[6]/div");
+
+    public static By sendAmountGuest = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[5]/div[1]/div/input");
+    public static By oklahomaState = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/label/div/ins");
+
     public static By oklahoma = By.xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/div/form/div[1]/div[2]/div[4]/label/div/ins");
+
 
 
     public static void selectCountry() throws Exception {
@@ -51,6 +56,11 @@ public class Send_DestinationPage {
     public static void selectamounttoSend() throws Exception {
         Thread.sleep(3000);
         Start.driver.findElement(sendAmount).sendKeys("100");
+    }
+
+    public static void selectamounttoSendGuest() throws Exception {
+        Thread.sleep(3000);
+        Start.driver.findElement(sendAmountGuest).sendKeys("100");
     }
 
     public static void goandcontinue() throws Exception {
